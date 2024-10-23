@@ -12,7 +12,7 @@ Welcome to my GitHub profile! I'm a passionate **web developer** specializing in
 - 🌱 Learning **TypeScript** and **GraphQL**.
 - 👯 Looking to collaborate on open-source projects.
 - 💬 Ask me about **MERN stack** and **Flutter mobile app development**.
-- 📫 Reach me at [your-email@example.com](mailto:your-email@example.com).
+- 📫 Reach me at [hailemariyam3298@gmail.com](mailto:hailemariyam3298@gmail.com).
 
 ---
 
@@ -80,7 +80,7 @@ A personal portfolio website built to showcase my skills and projects.
 ---
 
 ## 📫 Connect with Me
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/your-linkedin)
-[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/your-twitter)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=LinkedIn&logoColor=white)](www.linkedin.com/in/hailemariyam-kebede-1b6066296)
+[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=flat-square&logo=Twitter&logoColor=white)](https://x.com/Hailemariy356)
 
 
