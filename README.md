@@ -1,17 +1,18 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png"> 
-<!--   <img alt="Sun in light mode and moon with stars in dark mode" src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png"> -->
-</picture>
+<picture> <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png"> <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png"> </picture>
+👋 Hi, I'm Hailemariyam Kebede
 
-# Hi, I'm Hailemariyam 👋
-Welcome to my GitHub profile! I'm a passionate **web developer** specializing in **MERN stack development** and **mobile app development** using **Flutter**. I love building innovative projects and contributing to the developer community. 🚀
+Welcome to my GitHub profile! I’m a Full-Stack Developer passionate about building scalable web apps, SaaS platforms, and mobile solutions.
+I enjoy working with modern frameworks like Laravel, Vue.js, Next.js, and Flutter, turning ideas into real, impactful software. 🚀
 
-## 🌟 About Me
-- 🔭 I’m currently working on full-stack web and mobile projects.
-- 🌱 Learning **TypeScript** and **GraphQL**.
-- 👯 Looking to collaborate on open-source projects.
-- 💬 Ask me about **MERN stack** and **Flutter mobile app development**.
+🌟 About Me
+
+🔭 Currently working on SaaS HR systems, college websites, and mobile apps.
+
+🌱 Learning TypeScript, GraphQL, and improving on DevOps workflows.
+
+👯 Open to collaborations on open-source or startup-oriented projects.
+
+💬 Ask me about Laravel + Vue, Flutter state management, or multi-tenant architectures.
 - 📫 Reach me at [hailemariyam3298@gmail.com](mailto:hailemariyam3298@gmail.com).
 
 ---
