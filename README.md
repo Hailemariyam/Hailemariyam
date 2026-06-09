@@ -1,83 +1,233 @@
-<picture> <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png"> <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png"> </picture>
-👋 Hi, I'm Hailemariyam Kebede
+<div align="center">
 
-Welcome to my GitHub profile! I’m a Full-Stack Developer passionate about building scalable web apps, SaaS platforms, and mobile solutions.
-I enjoy working with modern frameworks like Laravel, Vue.js, Next.js, and Flutter, turning ideas into real, impactful software. 🚀
+# 👋 Hi, I'm Hailemariyam Kebede
 
-🌟 About Me
+### 🚀 Full-Stack Engineer • System Architect • DevOps Engineer • Open Source Builder
 
-🔭 Currently working on SaaS HR systems, college websites, and mobile apps.
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=900&lines=Full-Stack+Software+Engineer;System+Architect+%7C+DevOps+Engineer;Event-Driven+%26+Real-Time+Systems;Scalable+SaaS+%26+Distributed+Systems;Node.js+%7C+TypeScript+%7C+Kubernetes+%7C+React" />
 
-🌱 Learning TypeScript, GraphQL, and improving on DevOps workflows.
+<p align="center">
+  <a href="https://hailemariyam.tech">
+    <img src="https://img.shields.io/badge/Portfolio-Visit%20Website-00D9FF?style=for-the-badge">
+  </a>
 
-👯 Open to collaborations on open-source or startup-oriented projects.
+  <a href="mailto:hailemariyam3298@outlook.com">
+    <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge">
+  </a>
 
-💬 Ask me about Laravel + Vue, Flutter state management, or multi-tenant architectures.
-- 📫 Reach me at [hailemariyam3298@gmail.com](mailto:hailemariyam3298@gmail.com).
+  <a href="https://linkedin.com/in/hailemariyam-kebede-1b6066296">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge">
+  </a>
 
----
+  <a href="https://x.com/Hailemariy356">
+    <img src="https://img.shields.io/badge/X-Follow-black?style=for-the-badge">
+  </a>
+</p>
 
-## 🔧 Technologies & Tools
-
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![Dart](https://img.shields.io/badge/-Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
-
-### Frontend:
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
-
-### Backend:
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white)
-
-### Database:
-![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-
-### DevOps:
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+</div>
 
 ---
 
-## 🚀 My Projects
-Here are some of the projects I'm proud of:
+# 🚀 About Me
 
-### 🔥 WBES (Web Based Exam System)
-A MERN stack web-based exam system designed with enhanced security features.
-- **Technologies**: MERN Stack, Flutter (mobile app), Node.js, MongoDB
-- **Features**: Custom browser lockdown, question randomization, exam scheduling with password protection, automated question parsing, course modules, and a question bank with filters and categories.
-- **Mobile App**: "Exit Material Collection" (EMC) for accessing course modules and resource materials, built with Flutter.
+I am a **Full-Stack Engineer and System Architect** focused on building scalable, production-grade systems, SaaS platforms, and real-time distributed applications.
 
-### 🌐 [Appoint Me](https://github.com/Hailemariyam/appoint-me)
-A Flutter and Firebase app for booking appointments, currently being redeveloped into a super app for various sectors like doctor appointments and passport services.
-- **Technologies**: Flutter, Firebase
-- **Achievement**: Recognition certificate from Wollo University’s Scientific Director.
+I specialize in designing systems that handle **real-world complexity, high concurrency, and scalable infrastructure**.
 
-### 📱 Gym Bill App
-A Flutter and Firebase-based app for gym billing and membership management.
-- **Technologies**: Flutter, Firebase, Chapa Payment Integration
-- **Features**: Chapa payment system, QR receipt generation with one-month expiration.
-
-### 🌐 Smart Home Device Control App
-A Flutter app for controlling smart home devices, integrated with REST API and Arduino for hardware simulation.
-- **Technologies**: Flutter, REST API, Arduino (Proteus simulation).
-
-### 🌟 [Portfolio](https://github.com/Hailemariyam/portfolio)
-A personal portfolio website built to showcase my skills and projects.
-- **Technologies**: MERN Stack (MongoDB, Express, React, Node.js)
-- **Features**: Blog posts, project uploads, demo video uploads, and an admin panel for CRUD operations.
+I don’t just build applications — I design **end-to-end engineering systems** including backend architecture, frontend interfaces, and DevOps pipelines.
 
 ---
 
-## 📊 GitHub Stats & Achievements
-![Hailemariyam's GitHub stats](https://github-readme-stats.vercel.app/api?username=Hailemariyam&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Hailemariyam&layout=compact&theme=radical)
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=Hailemariyam&theme=darkhub)
+# ⚡ What I Build
+
+- 🏢 Enterprise SaaS Platforms
+- 🚑 Real-Time Event-Driven Systems
+- 🏫 E-Learning & School Management Systems
+- 🏛 Government Knowledge Systems
+- 📱 Cross-platform Mobile Applications
+- ⚙️ Developer Infrastructure Tools
+- 🤖 AI-integrated Applications
 
 ---
 
+# 🚑 Featured Project (Flagship System)
+
+## RAHA Ride Healing System
+
+A **real-time, event-driven distributed platform** designed for scalable ride coordination and healthcare workflow management.
+
+### 🧠 System Architecture
+
+Node.js • TypeScript • Redis • PostgreSQL • React • Tailwind • shadcn/ui • Docker • Kubernetes • CI/CD • WebSockets • Event-Driven Architecture
+
+### 💼 My Role (End-to-End Ownership)
+
+- Designed full **system architecture (frontend + backend + infrastructure)**
+- Built scalable **REST APIs and real-time WebSocket services**
+- Implemented **event-driven messaging system**
+- Developed responsive **React dashboard UI**
+- Engineered **real-time synchronization layer**
+- Designed **Redis caching & queue strategies**
+- Built and optimized **PostgreSQL relational schema**
+- Containerized microservices using **Docker**
+- Orchestrated production deployment using **Kubernetes**
+- Built CI/CD pipelines for automated deployments
+- Ensured system scalability, reliability, and observability
+
+### ⚙️ Core System Capabilities
+
+- ⚡ Real-time request tracking system
+- 🔄 Event-driven asynchronous processing
+- 📡 Low-latency WebSocket communication
+- 🧩 Distributed system architecture
+- 🛡 Fault-tolerant backend design
+- 📊 Scalable multi-service deployment
+
+---
+
+# 📦 Open Source Packages
+
+## 🚀 M-SEO
+
+A **framework-agnostic SEO ecosystem** for modern web applications.
+
+### Features
+
+- SEO auditing engine
+- AI-powered content analysis
+- Bot detection system
+- Analytics integration
+- CMS-agnostic architecture
+- Social media optimization tools
+
+### Supported Platforms
+
+React • Next.js • Vue • Express • PHP • Python • Go
+
+> Built to improve indexing, ranking, and performance of production web systems.
+
+---
+
+## 🔐 wenfit-validator
+
+A lightweight, extensible **validation library for JavaScript/TypeScript** applications.
+
+### Features
+
+- Schema-based validation system
+- Type-safe validation (TypeScript support)
+- Custom rule engine
+- High performance & lightweight design
+- Frontend + backend compatibility
+
+> Built for API validation, form validation, and data integrity layers in production systems.
+
+---
+
+# 🏗 Production Systems
+
+## 📚 Enterprise E-Learning Platform
+- Live classes & course streaming
+- Attendance tracking system
+- Digital content management
+- Payment integration
+- Student analytics dashboard
+
+## 🏫 School Management System
+- Multi-role portals (Student / Teacher / Parent)
+- Exams & grading system
+- Attendance tracking
+- Reporting & analytics engine
+
+## 🏛 Knowledge Management System
+- Government workflow automation
+- Role-based access control (RBAC)
+- Document management system
+- Knowledge repository engine
+
+## 📱 Mobile Applications (Flutter)
+- Appointment scheduling systems
+- Real-time notification apps
+- Firebase-powered mobile solutions
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+<p>
+<img src="https://skillicons.dev/icons?i=react,nextjs,vue,typescript,javascript,tailwind,html,css" />
+</p>
+
+## Backend
+<p>
+<img src="https://skillicons.dev/icons?i=nodejs,express,laravel,php" />
+</p>
+
+## Mobile
+<p>
+<img src="https://skillicons.dev/icons?i=flutter,dart,firebase" />
+</p>
+
+## Databases
+<p>
+<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis" />
+</p>
+
+## DevOps & Infrastructure
+<p>
+<img src="https://skillicons.dev/icons?i=docker,kubernetes,linux,git,github,githubactions,aws" />
+</p>
+
+---
+
+# 🧠 System Design Expertise
+
+```yaml
+Architecture:
+  - Event-Driven Systems
+  - Microservices Architecture
+  - Real-Time Applications (WebSockets)
+  - Distributed Systems Design
+  - Scalable SaaS Platforms
+
+Backend:
+  - REST APIs
+  - Message Queues & Event Processing
+  - Caching Strategies (Redis)
+  - Authentication & RBAC systems
+
+DevOps:
+  - Docker Containerization
+  - Kubernetes Orchestration
+  - CI/CD Pipelines
+  - Production Deployment Automation
+
+Database:
+  - PostgreSQL (Relational Design)
+  - MongoDB (NoSQL Systems)
+  - Redis (Caching, Queues, Pub/Sub)
+📊 GitHub Analytics
+<div align="center"> <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Hailemariyam&show_icons=true&theme=tokyonight&hide_border=true"/> <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hailemariyam&layout=compact&theme=tokyonight&hide_border=true"/> </div>
+🔥 Contribution Streak
+<div align="center"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=Hailemariyam&theme=tokyonight&hide_border=true"/> </div>
+🎯 Current Focus
+Scalable SaaS Architecture
+Real-Time Distributed Systems
+Event-Driven Backend Engineering
+AI Integration (RAG & Agents)
+Open Source Ecosystem Development
+Advanced System Design
+🌍 Connect With Me
+
+🌐 Portfolio: https://hailemariyam.tech
+📧 Email: hailemariyam3298@outlook.com
+🔗 LinkedIn: https://linkedin.com/in/hailemariyam-kebede-1b6066296
+🐦 X (Twitter): https://x.com/Hailemariy356
+
+<div align="center">
+💡 “I build systems that scale, not just applications that run.”
+
+⭐ Star a repository if you find it useful!
+
+</div> ```
