@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D5858,50:1A7070,100:E07628&height=220&section=header&text=Hailemariyam%20Kebede&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Technology%20Consultant%20%26%20Developer%20%7C%20Co-Founder%20%40%20Degan%20Technologies&descSize=16&descAlignY=58&descColor=F2D5B8" />
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:0D5858,50:1A7070,100:E07628&amp;height=220&amp;section=header&amp;text=Hailemariyam%20Kebede&amp;fontSize=46&amp;fontColor=ffffff&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=Technology%20Consultant%20%26%20Developer%20%7C%20Co-Founder%20%40%20Degan%20Technologies&amp;descSize=16&amp;descAlignY=58&amp;descColor=F2D5B8" />
 
 <br/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=18&pause=1200&color=E07628&center=true&vCenter=true&width=800&height=50&lines=🏗️+Full-Stack+Engineer+%7C+System+Architect;⚡+Real-Time+%26+Event-Driven+Systems+Builder;🚀+Scalable+SaaS+%26+Distributed+Systems;🌍+Driving+Digital+Transformation" />
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&amp;weight=600&amp;size=18&amp;pause=1200&amp;color=E07628&amp;center=true&amp;vCenter=true&amp;width=800&amp;height=50&amp;lines=🏗️+Full-Stack+Engineer+%7C+System+Architect;⚡+Real-Time+%26+Event-Driven+Systems+Builder;🚀+Scalable+SaaS+%26+Distributed+Systems;🌍+Driving+Digital+Transformation" />
 
 <br/>
 
@@ -43,16 +43,16 @@ const hailemariyam = {
 ## 🛠️ Tech Arsenal
 
 ### ⚡ Frontend
-<img src="https://skillicons.dev/icons?i=react,nextjs,vue,typescript,javascript,tailwind,html,css&theme=dark" />
+<img src="https://skillicons.dev/icons?i=react,nextjs,vue,typescript,javascript,tailwind,html,css&amp;theme=dark" />
 
 ### 🔥 Backend
-<img src="https://skillicons.dev/icons?i=nodejs,nestjs,express,laravel,php,python&theme=dark" />
+<img src="https://skillicons.dev/icons?i=nodejs,nestjs,express,laravel,php,python&amp;theme=dark" />
 
 ### 📱 Mobile & Data
-<img src="https://skillicons.dev/icons?i=flutter,dart,firebase,postgres,mysql,mongodb,redis&theme=dark" />
+<img src="https://skillicons.dev/icons?i=flutter,dart,firebase,postgres,mysql,mongodb,redis&amp;theme=dark" />
 
 ### ☁️ DevOps & Cloud
-<img src="https://skillicons.dev/icons?i=docker,kubernetes,linux,git,githubactions,aws&theme=dark" />
+<img src="https://skillicons.dev/icons?i=docker,kubernetes,linux,git,githubactions,aws&amp;theme=dark" />
 
 </div>
 
@@ -177,16 +177,16 @@ npm install wenfit-validator
 
 ## 📊 GitHub Analytics
 
-<img height="175em" src="https://github-readme-stats.vercel.app/api?username=Hailemariyam&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=E07628&icon_color=1A7070&text_color=F2D5B8&include_all_commits=true&count_private=true" />
-<img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hailemariyam&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=E07628&text_color=F2D5B8" />
+<img height="175em" src="https://github-readme-stats.vercel.app/api?username=Hailemariyam&amp;show_icons=true&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=E07628&amp;icon_color=1A7070&amp;text_color=F2D5B8&amp;include_all_commits=true&amp;count_private=true" />
+<img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hailemariyam&amp;layout=compact&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=E07628&amp;text_color=F2D5B8" />
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Hailemariyam&theme=dark&hide_border=true&background=0d1117&ring=E07628&fire=E07628&currStreakLabel=1A7070&sideLabels=1A7070&currStreakNum=ffffff&sideNums=ffffff&dates=888888" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Hailemariyam&amp;theme=dark&amp;hide_border=true&amp;background=0d1117&amp;ring=E07628&amp;fire=E07628&amp;currStreakLabel=1A7070&amp;sideLabels=1A7070&amp;currStreakNum=ffffff&amp;sideNums=ffffff&amp;dates=888888" />
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Hailemariyam&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=E07628&line=1A7070&point=E07628&area=true" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Hailemariyam&amp;theme=tokyo-night&amp;hide_border=true&amp;bg_color=0d1117&amp;color=E07628&amp;line=1A7070&amp;point=E07628&amp;area=true" />
 
 </div>
 
@@ -204,7 +204,7 @@ npm install wenfit-validator
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:E07628,50:1A7070,100:0D5858&height=130&section=footer&animation=fadeIn" />
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:E07628,50:1A7070,100:0D5858&amp;height=130&amp;section=footer&amp;animation=fadeIn" />
 
 *💡 "I build systems that scale, not just applications that run."*
 
