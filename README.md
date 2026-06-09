@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:0D5858,50:1A7070,100:E07628&amp;height=220&amp;section=header&amp;text=Hailemariyam%20Kebede&amp;fontSize=46&amp;fontColor=ffffff&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=Technology%20Consultant%20%26%20Developer%20%7C%20Co-Founder%20%40%20Degan%20Technologies&amp;descSize=16&amp;descAlignY=58&amp;descColor=F2D5B8" />
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:0D5858,50:1A7070,100:E07628&amp;height=220&amp;section=header&amp;text=Hailemariyam%20Kebede&amp;fontSize=46&amp;fontColor=ffffff&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=Technology%20Consultant%20and%20Developer%20%7C%20Co-Founder%20%40%20Degan%20Technologies&amp;descSize=16&amp;descAlignY=58&amp;descColor=F2D5B8" />
 
 <br/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&amp;weight=600&amp;size=18&amp;pause=1200&amp;color=E07628&amp;center=true&amp;vCenter=true&amp;width=800&amp;height=50&amp;lines=🏗️+Full-Stack+Engineer+%7C+System+Architect;⚡+Real-Time+%26+Event-Driven+Systems+Builder;🚀+Scalable+SaaS+%26+Distributed+Systems;🌍+Driving+Digital+Transformation" />
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&amp;weight=600&amp;size=18&amp;pause=1200&amp;color=E07628&amp;center=true&amp;vCenter=true&amp;width=800&amp;height=50&amp;lines=🏗️+Full-Stack+Engineer+%7C+System+Architect;⚡+Real-Time+and+Event-Driven+Systems+Builder;🚀+Scalable+SaaS+and+Distributed+Systems;🌍+Driving+Digital+Transformation" />
 
 <br/>
 
