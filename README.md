@@ -1,20 +1,18 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d5c5c,50:1a7a6e,100:E8712A&height=220&section=header&text=Hailemariyam%20Kebede&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Technology%20Consultant%20%26%20Developer%20%7C%20Co-Founder%20%40%20Degan%20Technologies&descSize=16&descAlignY=58&descColor=f0f0f0" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D5858,50:1A7070,100:E07628&height=220&section=header&text=Hailemariyam%20Kebede&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Technology%20Consultant%20%26%20Developer%20%7C%20Co-Founder%20%40%20Degan%20Technologies&descSize=16&descAlignY=58&descColor=F2D5B8" />
 
 <br/>
 
-<a href="https://readme-typing-svg.herokuapp.com">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=18&pause=1200&color=E8712A&center=true&vCenter=true&width=800&height=50&lines=🏗️+Full-Stack+Engineer+%7C+System+Architect;⚡+Real-Time+%26+Event-Driven+Systems+Builder;🚀+Scalable+SaaS+%26+Distributed+Systems;🌍+Driving+Digital+Transformation" />
-</a>
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=18&pause=1200&color=E07628&center=true&vCenter=true&width=800&height=50&lines=🏗️+Full-Stack+Engineer+%7C+System+Architect;⚡+Real-Time+%26+Event-Driven+Systems+Builder;🚀+Scalable+SaaS+%26+Distributed+Systems;🌍+Driving+Digital+Transformation" />
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-hailemariyam.tech-0d5c5c?style=for-the-badge)](https://hailemariyam.tech)
-[![Gmail](https://img.shields.io/badge/Gmail-E8712A?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hailemariyam3298@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0d5c5c?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/hailemariyam-kebede-1b6066296)
-[![X](https://img.shields.io/badge/X_(Twitter)-E8712A?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Hailemariy356)
-[![Profile Views](https://komarev.com/ghpvc/?username=Hailemariyam&color=E8712A&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/Hailemariyam)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-hailemariyam.tech-1A7070?style=for-the-badge)](https://hailemariyam.tech)
+[![Gmail](https://img.shields.io/badge/Gmail-E07628?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hailemariyam3298@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0D5858?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/hailemariyam-kebede-1b6066296)
+[![X](https://img.shields.io/badge/X_(Twitter)-E07628?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Hailemariy356)
+[![Views](https://komarev.com/ghpvc/?username=Hailemariyam&color=E07628&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/Hailemariyam)
 
 </div>
 
@@ -29,9 +27,8 @@
 ```typescript
 const hailemariyam = {
   role     : "Full-Stack Engineer · System Architect · DevOps Engineer",
-  company  : "Co-Founder @ Degan Technologies",
-  location : "Ethiopia 🇪🇹",
-  stack    : ["TypeScript", "Node.js", "NestJS", "React", "PostgreSQL",
+  company  : "Co-Founder @ Degan Technologies 🇪🇹",
+  stack    : ["TypeScript", "NestJS", "React", "PostgreSQL",
               "Redis", "Docker", "Kubernetes", "AWS"],
   building : ["Scalable SaaS", "Real-Time Systems", "AI-Integrated Apps",
               "Open Source Tools"],
@@ -51,11 +48,8 @@ const hailemariyam = {
 ### 🔥 Backend
 <img src="https://skillicons.dev/icons?i=nodejs,nestjs,express,laravel,php,python&theme=dark" />
 
-### 📱 Mobile
-<img src="https://skillicons.dev/icons?i=flutter,dart,firebase&theme=dark" />
-
-### 🗄️ Data & Caching
-<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis&theme=dark" />
+### 📱 Mobile & Data
+<img src="https://skillicons.dev/icons?i=flutter,dart,firebase,postgres,mysql,mongodb,redis&theme=dark" />
 
 ### ☁️ DevOps & Cloud
 <img src="https://skillicons.dev/icons?i=docker,kubernetes,linux,git,githubactions,aws&theme=dark" />
@@ -66,20 +60,19 @@ const hailemariyam = {
 
 <div align="center">
 
-## 🚀 Flagship Project
+## 🚀 Flagship Project — RAHA Ride Healing System
 
-### RAHA — Ride Healing System
+*Real-time · Event-Driven · Distributed · Production-Grade*
 
-*A real-time, event-driven distributed platform for ride coordination & healthcare workflows*
-
-![NestJS](https://img.shields.io/badge/NestJS-E8712A?style=flat-square&logo=nestjs&logoColor=white)
-![React](https://img.shields.io/badge/React-0d5c5c?style=flat-square&logo=react&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-E8712A?style=flat-square&logo=typescript&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0d5c5c?style=flat-square&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-E8712A?style=flat-square&logo=redis&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-0d5c5c?style=flat-square&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-E8712A?style=flat-square&logo=kubernetes&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-0d5c5c?style=flat-square&logo=amazonaws&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E07628?style=flat-square&logo=nestjs&logoColor=white)
+![React](https://img.shields.io/badge/React-1A7070?style=flat-square&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-0D5858?style=flat-square&logo=typescript&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-E07628?style=flat-square&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-1A7070?style=flat-square&logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-0D5858?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-E07628?style=flat-square&logo=kubernetes&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS_S3-1A7070?style=flat-square&logo=amazonaws&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSockets-0D5858?style=flat-square&logo=socket.io&logoColor=white)
 
 </div>
 
@@ -98,14 +91,14 @@ WebSocket dispatch · Live map tracking · SOS emergency response · Low-latency
 
 **🧠 AI Integration**
 
-RAG-powered support chat · Hotspot analytics engine · Dynamic pricing system
+RAG-powered support chat · Hotspot analytics · Dynamic pricing engine
 
 </td>
 <td width="33%" align="center">
 
 **☁️ Cloud-Native**
 
-Kubernetes orchestration · Docker microservices · AWS S3 · Automated CI/CD
+Kubernetes orchestration · Docker microservices · AWS S3 · CI/CD Pipelines
 
 </td>
 </tr>
@@ -127,8 +120,8 @@ Kubernetes orchestration · Docker microservices · AWS S3 · Automated CI/CD
 
 ### 🔍 [m-seo](https://hailemariyam.github.io/m-seo/)
 
-[![npm](https://img.shields.io/badge/npm-install%20m--seo-E8712A?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/m-seo)
-[![Docs](https://img.shields.io/badge/Docs-hailemariyam.github.io-0d5c5c?style=for-the-badge)](https://hailemariyam.github.io/m-seo/)
+[![npm](https://img.shields.io/badge/npm-install%20m--seo-E07628?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/m-seo)
+[![Docs](https://img.shields.io/badge/Docs-Read%20Now-1A7070?style=for-the-badge)](https://hailemariyam.github.io/m-seo/)
 
 **Framework-agnostic SEO ecosystem**
 
@@ -138,14 +131,14 @@ Kubernetes orchestration · Docker microservices · AWS S3 · Automated CI/CD
 npm install m-seo
 ```
 
-✦ Universal SEO tags (OG, Twitter, JSON-LD)  
-✦ CLI with 10+ audit commands  
-✦ AI-powered content analysis  
-✦ CMS plugins (WordPress, Ghost, Strapi)  
-✦ Multi-language SDKs (PHP, Python, Go, Ruby)  
+✦ Universal SEO tags (OG · Twitter · JSON-LD)  
+✦ CLI with 10+ audit & generation commands  
+✦ AI-powered content & keyword analysis  
+✦ CMS plugins (WordPress · Ghost · Strapi)  
+✦ SDKs for PHP · Python · Ruby · Go  
 ✦ Image/Video SEO + WebP conversion  
 
-**Supports:** React · Next.js · Vue · Express · PHP · Python · Go
+**Works with:** React · Next.js · Vue · Express · PHP · Python · Go
 
 </td>
 <td width="50%">
@@ -154,8 +147,8 @@ npm install m-seo
 
 ### 🔐 [wenfit-validator](https://wenfit-validator.vercel.app/introduction.html)
 
-[![npm](https://img.shields.io/badge/npm-install%20wenfit--validator-E8712A?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/wenfit-validator)
-[![Docs](https://img.shields.io/badge/Docs-wenfit--validator.vercel.app-0d5c5c?style=for-the-badge)](https://wenfit-validator.vercel.app/introduction.html)
+[![npm](https://img.shields.io/badge/npm-install%20wenfit--validator-E07628?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/wenfit-validator)
+[![Docs](https://img.shields.io/badge/Docs-Read%20Now-1A7070?style=for-the-badge)](https://wenfit-validator.vercel.app/introduction.html)
 
 **Universal TypeScript validation library**
 
@@ -166,13 +159,13 @@ npm install wenfit-validator
 ```
 
 ✦ Automatic TypeScript type inference  
-✦ Define once, validate everywhere  
+✦ Define once, validate everywhere (full-stack)  
 ✦ Zero external dependencies  
-✦ Async validation support  
+✦ Async validation (DB checks · API calls)  
 ✦ Composable & extensible schemas  
-✦ Plugin system for custom rules  
+✦ Plugin system + i18n ready  
 
-**Supports:** React · Vue · Angular · NestJS · Express
+**Works with:** React · Vue · Angular · NestJS · Express
 
 </td>
 </tr>
@@ -184,16 +177,16 @@ npm install wenfit-validator
 
 ## 📊 GitHub Analytics
 
-<img height="175em" src="https://github-readme-stats.vercel.app/api?username=Hailemariyam&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=E8712A&icon_color=1a7a6e&text_color=c9d1d9&include_all_commits=true&count_private=true" />
-<img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hailemariyam&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=E8712A&text_color=c9d1d9" />
+<img height="175em" src="https://github-readme-stats.vercel.app/api?username=Hailemariyam&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=E07628&icon_color=1A7070&text_color=F2D5B8&include_all_commits=true&count_private=true" />
+<img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hailemariyam&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=E07628&text_color=F2D5B8" />
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Hailemariyam&theme=dark&hide_border=true&background=0d1117&ring=E8712A&fire=E8712A&currStreakLabel=1a7a6e&sideLabels=1a7a6e&currStreakNum=ffffff&sideNums=ffffff&dates=888888" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Hailemariyam&theme=dark&hide_border=true&background=0d1117&ring=E07628&fire=E07628&currStreakLabel=1A7070&sideLabels=1A7070&currStreakNum=ffffff&sideNums=ffffff&dates=888888" />
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Hailemariyam&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=E8712A&line=1a7a6e&point=E8712A&area=true" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Hailemariyam&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=E07628&line=1A7070&point=E07628&area=true" />
 
 </div>
 
@@ -203,15 +196,15 @@ npm install wenfit-validator
 
 ## 🎯 Currently Building
 
-![SaaS](https://img.shields.io/badge/Scalable_SaaS_Architecture-0d5c5c?style=for-the-badge)
-![Real-Time](https://img.shields.io/badge/Real--Time_Distributed_Systems-E8712A?style=for-the-badge)
-![AI](https://img.shields.io/badge/AI_Agents_%26_RAG_Systems-0d5c5c?style=for-the-badge)
-![OSS](https://img.shields.io/badge/Open_Source_Ecosystem-E8712A?style=for-the-badge)
-![K8s](https://img.shields.io/badge/Cloud--Native_%26_Kubernetes-0d5c5c?style=for-the-badge)
+![SaaS](https://img.shields.io/badge/⚡_Scalable_SaaS_Architecture-0D5858?style=for-the-badge)
+![RT](https://img.shields.io/badge/🔄_Real--Time_Distributed_Systems-E07628?style=for-the-badge)
+![AI](https://img.shields.io/badge/🤖_AI_Agents_%26_RAG_Systems-1A7070?style=for-the-badge)
+![OSS](https://img.shields.io/badge/📦_Open_Source_Ecosystem-E07628?style=for-the-badge)
+![K8s](https://img.shields.io/badge/☁️_Cloud--Native_%26_Kubernetes-0D5858?style=for-the-badge)
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:E8712A,50:1a7a6e,100:0d5c5c&height=120&section=footer&animation=fadeIn" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:E07628,50:1A7070,100:0D5858&height=130&section=footer&animation=fadeIn" />
 
 *💡 "I build systems that scale, not just applications that run."*
 
