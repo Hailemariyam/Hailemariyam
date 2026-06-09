@@ -1,233 +1,284 @@
 <div align="center">
 
-# 👋 Hi, I'm Hailemariyam Kebede
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Hailemariyam%20Kebede&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Full-Stack%20Engineer%20%7C%20System%20Architect%20%7C%20DevOps%20Engineer&descAlignY=55&descSize=18" />
 
-### 🚀 Full-Stack Engineer • System Architect • DevOps Engineer • Open Source Builder
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=20&pause=1000&color=00D9FF&center=true&vCenter=true&width=900&height=60&lines=🏗️+Building+Scalable+SaaS+%26+Distributed+Systems;⚡+Real-Time+Event-Driven+Architecture;🚀+Node.js+%7C+TypeScript+%7C+Kubernetes+%7C+React;🔭+Open+Source+Builder+%26+System+Architect" alt="Typing SVG" />
+</a>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=900&lines=Full-Stack+Software+Engineer;System+Architect+%7C+DevOps+Engineer;Event-Driven+%26+Real-Time+Systems;Scalable+SaaS+%26+Distributed+Systems;Node.js+%7C+TypeScript+%7C+Kubernetes+%7C+React" />
+<br/>
 
-<p align="center">
+<p>
   <a href="https://hailemariyam.tech">
-    <img src="https://img.shields.io/badge/Portfolio-Visit%20Website-00D9FF?style=for-the-badge">
+    <img src="https://img.shields.io/badge/🌐%20Portfolio-hailemariyam.tech-00D9FF?style=for-the-badge&logoColor=white" />
   </a>
-
   <a href="mailto:hailemariyam3298@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
-
   <a href="https://linkedin.com/in/hailemariyam-kebede-1b6066296">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
-
   <a href="https://x.com/Hailemariy356">
-    <img src="https://img.shields.io/badge/X-Follow-black?style=for-the-badge">
+    <img src="https://img.shields.io/badge/X%20(Twitter)-000000?style=for-the-badge&logo=x&logoColor=white" />
   </a>
+  <img src="https://komarev.com/ghpvc/?username=Hailemariyam&color=00d9ff&style=for-the-badge&label=PROFILE+VIEWS" />
 </p>
 
 </div>
 
 ---
 
-# 🚀 About Me
+## 🧑‍💻 About Me
 
-I am a **Full-Stack Engineer and System Architect** focused on building scalable, production-grade systems, SaaS platforms, and real-time distributed applications.
+```typescript
+const hailemariyam = {
+  role: ["Full-Stack Engineer", "System Architect", "DevOps Engineer"],
+  location: "Ethiopia 🇪🇹",
+  languages: ["TypeScript", "JavaScript", "PHP", "Dart", "Python"],
+  currentFocus: [
+    "Scalable SaaS Architecture",
+    "Real-Time Event-Driven Systems",
+    "AI Integration (RAG & Agents)",
+    "Open Source Ecosystem Development",
+  ],
+  philosophy: "I build systems that scale, not just applications that run.",
+  funFact: "I design the entire stack — from DB schema to K8s manifests 🚀",
+};
+```
 
-I specialize in designing systems that handle **real-world complexity, high concurrency, and scalable infrastructure**.
-
-I don’t just build applications — I design **end-to-end engineering systems** including backend architecture, frontend interfaces, and DevOps pipelines.
-
----
-
-# ⚡ What I Build
-
-- 🏢 Enterprise SaaS Platforms
-- 🚑 Real-Time Event-Driven Systems
-- 🏫 E-Learning & School Management Systems
-- 🏛 Government Knowledge Systems
-- 📱 Cross-platform Mobile Applications
-- ⚙️ Developer Infrastructure Tools
-- 🤖 AI-integrated Applications
-
----
-
-# 🚑 Featured Project (Flagship System)
-
-## RAHA Ride Healing System
-
-A **real-time, event-driven distributed platform** designed for scalable ride coordination and healthcare workflow management.
-
-### 🧠 System Architecture
-
-Node.js • TypeScript • Redis • PostgreSQL • React • Tailwind • shadcn/ui • Docker • Kubernetes • CI/CD • WebSockets • Event-Driven Architecture
-
-### 💼 My Role (End-to-End Ownership)
-
-- Designed full **system architecture (frontend + backend + infrastructure)**
-- Built scalable **REST APIs and real-time WebSocket services**
-- Implemented **event-driven messaging system**
-- Developed responsive **React dashboard UI**
-- Engineered **real-time synchronization layer**
-- Designed **Redis caching & queue strategies**
-- Built and optimized **PostgreSQL relational schema**
-- Containerized microservices using **Docker**
-- Orchestrated production deployment using **Kubernetes**
-- Built CI/CD pipelines for automated deployments
-- Ensured system scalability, reliability, and observability
-
-### ⚙️ Core System Capabilities
-
-- ⚡ Real-time request tracking system
-- 🔄 Event-driven asynchronous processing
-- 📡 Low-latency WebSocket communication
-- 🧩 Distributed system architecture
-- 🛡 Fault-tolerant backend design
-- 📊 Scalable multi-service deployment
+> 🎯 I specialize in designing systems that handle **real-world complexity, high concurrency, and scalable infrastructure**. I don't just build apps — I engineer **end-to-end systems** including backend architecture, frontend interfaces, and DevOps pipelines.
 
 ---
 
-# 📦 Open Source Packages
+## 🏆 GitHub Trophies
 
-## 🚀 M-SEO
+<div align="center">
 
-A **framework-agnostic SEO ecosystem** for modern web applications.
+<img src="https://github-profile-trophy.vercel.app/?username=Hailemariyam&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&row=1&column=7" />
 
-### Features
+</div>
+
+---
+
+## 🚀 Flagship Project — RAHA Ride Healing System
+
+<div align="center">
+
+| Layer | Technologies |
+|:--|:--|
+| **Frontend** | React · TypeScript · Tailwind CSS · shadcn/ui |
+| **Backend** | Node.js · NestJS · REST API · WebSockets |
+| **Real-Time** | Redis Pub/Sub · Event-Driven Architecture |
+| **Database** | PostgreSQL · Redis |
+| **DevOps** | Docker · Kubernetes · CI/CD · GitHub Actions |
+| **Cloud** | AWS S3 · Production VPS |
+
+</div>
+
+A **real-time, event-driven distributed platform** for scalable ride coordination and healthcare workflow management. I owned the **complete engineering lifecycle** — from system design to production deployment.
+
+<details>
+<summary><b>🔍 View Full System Capabilities</b></summary>
+<br>
+
+**Architecture & Infrastructure**
+- ✅ Designed full system architecture (frontend + backend + infrastructure)
+- ✅ Kubernetes-orchestrated production deployment
+- ✅ Docker-containerized microservice architecture
+- ✅ CI/CD pipelines for automated deployments
+
+**Backend Engineering**
+- ✅ Scalable REST APIs & real-time WebSocket services
+- ✅ Event-driven asynchronous processing engine
+- ✅ Redis caching, queues & Pub/Sub strategies
+- ✅ PostgreSQL relational schema design & optimization
+- ✅ JWT-based auth + RBAC access control
+- ✅ AI-powered Support Chat (RAG system)
+- ✅ Dynamic pricing & hotspot analytics engine
+- ✅ SOS emergency real-time response system
+- ✅ Fraud prevention & promotion engine
+
+**Frontend Engineering**
+- ✅ Responsive React admin dashboard
+- ✅ Real-time dispatch & live map tracking (Google Maps API)
+- ✅ WebSocket-driven real-time synchronization layer
+
+</details>
+
+---
+
+## 📦 Open Source Packages
+
+<table>
+<tr>
+<td width="50%">
+
+### 🔍 M-SEO
+**Framework-agnostic SEO ecosystem** for modern web applications.
 
 - SEO auditing engine
 - AI-powered content analysis
 - Bot detection system
 - Analytics integration
-- CMS-agnostic architecture
-- Social media optimization tools
+- Social media optimization
 
-### Supported Platforms
+**Supports:** React · Next.js · Vue · Express · PHP · Python · Go
 
-React • Next.js • Vue • Express • PHP • Python • Go
+</td>
+<td width="50%">
 
-> Built to improve indexing, ranking, and performance of production web systems.
-
----
-
-## 🔐 wenfit-validator
-
-A lightweight, extensible **validation library for JavaScript/TypeScript** applications.
-
-### Features
+### 🔐 wenfit-validator
+**Lightweight, extensible validation library** for JS/TS.
 
 - Schema-based validation system
-- Type-safe validation (TypeScript support)
+- Full TypeScript type-safety
 - Custom rule engine
-- High performance & lightweight design
-- Frontend + backend compatibility
+- High performance & zero bloat
+- Frontend + backend compatible
 
-> Built for API validation, form validation, and data integrity layers in production systems.
+**Use cases:** API validation · Form validation · Data integrity
 
----
-
-# 🏗 Production Systems
-
-## 📚 Enterprise E-Learning Platform
-- Live classes & course streaming
-- Attendance tracking system
-- Digital content management
-- Payment integration
-- Student analytics dashboard
-
-## 🏫 School Management System
-- Multi-role portals (Student / Teacher / Parent)
-- Exams & grading system
-- Attendance tracking
-- Reporting & analytics engine
-
-## 🏛 Knowledge Management System
-- Government workflow automation
-- Role-based access control (RBAC)
-- Document management system
-- Knowledge repository engine
-
-## 📱 Mobile Applications (Flutter)
-- Appointment scheduling systems
-- Real-time notification apps
-- Firebase-powered mobile solutions
+</td>
+</tr>
+</table>
 
 ---
 
-# 🛠 Tech Stack
-
-## Frontend
-<p>
-<img src="https://skillicons.dev/icons?i=react,nextjs,vue,typescript,javascript,tailwind,html,css" />
-</p>
-
-## Backend
-<p>
-<img src="https://skillicons.dev/icons?i=nodejs,express,laravel,php" />
-</p>
-
-## Mobile
-<p>
-<img src="https://skillicons.dev/icons?i=flutter,dart,firebase" />
-</p>
-
-## Databases
-<p>
-<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis" />
-</p>
-
-## DevOps & Infrastructure
-<p>
-<img src="https://skillicons.dev/icons?i=docker,kubernetes,linux,git,github,githubactions,aws" />
-</p>
-
----
-
-# 🧠 System Design Expertise
-
-```yaml
-Architecture:
-  - Event-Driven Systems
-  - Microservices Architecture
-  - Real-Time Applications (WebSockets)
-  - Distributed Systems Design
-  - Scalable SaaS Platforms
-
-Backend:
-  - REST APIs
-  - Message Queues & Event Processing
-  - Caching Strategies (Redis)
-  - Authentication & RBAC systems
-
-DevOps:
-  - Docker Containerization
-  - Kubernetes Orchestration
-  - CI/CD Pipelines
-  - Production Deployment Automation
-
-Database:
-  - PostgreSQL (Relational Design)
-  - MongoDB (NoSQL Systems)
-  - Redis (Caching, Queues, Pub/Sub)
-📊 GitHub Analytics
-<div align="center"> <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Hailemariyam&show_icons=true&theme=tokyonight&hide_border=true"/> <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hailemariyam&layout=compact&theme=tokyonight&hide_border=true"/> </div>
-🔥 Contribution Streak
-<div align="center"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=Hailemariyam&theme=tokyonight&hide_border=true"/> </div>
-🎯 Current Focus
-Scalable SaaS Architecture
-Real-Time Distributed Systems
-Event-Driven Backend Engineering
-AI Integration (RAG & Agents)
-Open Source Ecosystem Development
-Advanced System Design
-🌍 Connect With Me
-
-🌐 Portfolio: https://hailemariyam.tech
-📧 Email: hailemariyam3298@outlook.com
-🔗 LinkedIn: https://linkedin.com/in/hailemariyam-kebede-1b6066296
-🐦 X (Twitter): https://x.com/Hailemariy356
+## 🏗️ Production Systems Portfolio
 
 <div align="center">
-💡 “I build systems that scale, not just applications that run.”
 
-⭐ Star a repository if you find it useful!
+| System | Stack | Key Features |
+|:--|:--|:--|
+| 🚗 **RAHA Ride Healing** | NestJS · React · K8s | Real-time dispatch · WebSockets · AI Support |
+| 📚 **E-Learning Platform** | Node.js · React | Live streaming · Attendance · Analytics |
+| 🏫 **School Management** | Laravel · React | Multi-role portals · Grading · Reporting |
+| 🏛️ **Knowledge Management** | Node.js · PostgreSQL | Gov workflow automation · RBAC · DocMgmt |
+| 📱 **Mobile Apps (Flutter)** | Flutter · Firebase | Appointment booking · Real-time notifications |
 
-</div> ```
+</div>
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+### Frontend
+<img src="https://skillicons.dev/icons?i=react,nextjs,vue,typescript,javascript,tailwind,html,css" />
+
+### Backend
+<img src="https://skillicons.dev/icons?i=nodejs,nestjs,express,laravel,php,python" />
+
+### Mobile
+<img src="https://skillicons.dev/icons?i=flutter,dart,firebase" />
+
+### Databases & Caching
+<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis" />
+
+### DevOps & Cloud
+<img src="https://skillicons.dev/icons?i=docker,kubernetes,linux,git,github,githubactions,aws" />
+
+</div>
+
+---
+
+## 🧠 System Design Expertise
+
+<div align="center">
+
+```
+┌────────────────────────────────────────────────────────────────────┐
+│                     ARCHITECTURE EXPERTISE                         │
+├──────────────────────┬──────────────────────┬──────────────────────┤
+│     DISTRIBUTED      │      REAL-TIME        │      DEVOPS          │
+│                      │                       │                      │
+│  ✦ Microservices     │  ✦ WebSocket Systems  │  ✦ Docker           │
+│  ✦ Event-Driven      │  ✦ Pub/Sub Messaging  │  ✦ Kubernetes       │
+│  ✦ CQRS Patterns     │  ✦ Live Tracking      │  ✦ CI/CD Pipelines  │
+│  ✦ Scalable SaaS     │  ✦ Async Processing   │  ✦ AWS Cloud        │
+├──────────────────────┼──────────────────────┼──────────────────────┤
+│      BACKEND         │      DATABASE         │        AI            │
+│                      │                       │                      │
+│  ✦ REST API Design   │  ✦ PostgreSQL Schema  │  ✦ RAG Systems      │
+│  ✦ Auth & RBAC       │  ✦ Redis (Cache/Q)    │  ✦ AI Chat Agents   │
+│  ✦ Message Queues    │  ✦ NoSQL Systems      │  ✦ AI Content Tools │
+│  ✦ Rate Limiting     │  ✦ Query Optimization │  ✦ OpenAI / LLMs    │
+└──────────────────────┴──────────────────────┴──────────────────────┘
+```
+
+</div>
+
+---
+
+## 📊 GitHub Analytics
+
+<div align="center">
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Hailemariyam&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hailemariyam&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d9ff&text_color=c9d1d9" />
+
+</div>
+
+<div align="center">
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Hailemariyam&theme=tokyonight&hide_border=true&background=0d1117&ring=00d9ff&fire=ff6b6b&currStreakLabel=00d9ff" />
+
+</div>
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Hailemariyam&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00d9ff&line=00d9ff&point=ffffff&area=true&area_color=00d9ff" />
+
+</div>
+
+---
+
+## 🎯 Current Focus
+
+<div align="center">
+
+| 🔭 Building | 📖 Studying | 🤝 Open To |
+|:---:|:---:|:---:|
+| Scalable SaaS Platforms | Advanced System Design | Open Source Collaboration |
+| Real-Time Distributed Systems | AI Agents & RAG Systems | Remote Opportunities |
+| Event-Driven Architecture | Cloud-Native Patterns | Technical Mentorship |
+| Open Source Ecosystem | Kubernetes Advanced | Startup Consulting |
+
+</div>
+
+---
+
+## 🌍 Let's Connect
+
+<div align="center">
+
+<a href="https://hailemariyam.tech">
+  <img src="https://img.shields.io/badge/🌐%20Portfolio-hailemariyam.tech-00D9FF?style=for-the-badge" />
+</a>
+<a href="mailto:hailemariyam3298@gmail.com">
+  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+<a href="mailto:hailemariyam3298@outlook.com">
+  <img src="https://img.shields.io/badge/Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" />
+</a>
+<a href="https://linkedin.com/in/hailemariyam-kebede-1b6066296">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="https://x.com/Hailemariy356">
+  <img src="https://img.shields.io/badge/X%20(Twitter)-000000?style=for-the-badge&logo=x&logoColor=white" />
+</a>
+
+<br/><br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling&fontColor=fff" />
+
+</div>
+
+<div align="center">
+
+> 💡 *"I build systems that scale, not just applications that run."*
+
+⭐ **Star a repository if you find it useful!**
+
+</div>
