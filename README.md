@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/badge/Portfolio-Visit%20Website-00D9FF?style=for-the-badge">
   </a>
 
-  <a href="mailto:hailemariyam3298@outlook.com">
+  <a href="mailto:hailemariyam3298@gmail.com">
     <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge">
   </a>
 
