@@ -27,7 +27,7 @@
 ```typescript
 const hailemariyam = {
   role     : "Full-Stack Engineer · System Architect · DevOps Engineer",
-  company  : "Co-Founder @ Degan Technologies 🇪🇹",
+  company  : "Co-Founder & CTO @ Degan Technologies 🇪🇹",
   stack    : ["TypeScript", "NestJS", "React", "PostgreSQL",
               "Redis", "Docker", "Kubernetes", "AWS"],
   building : ["Scalable SaaS", "Real-Time Systems", "AI-Integrated Apps",
