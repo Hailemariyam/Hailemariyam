@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:0D5858,50:1A7070,100:E07628&amp;height=220&amp;section=header&amp;text=Hailemariyam%20Kebede&amp;fontSize=46&amp;fontColor=ffffff&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=Technology%20Consultant%20and%20Developer%20%7C%20Co-Founder & CTO %20%40%20Degan%20Technologies&amp;descSize=16&amp;descAlignY=58&amp;descColor=F2D5B8" />
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:0D5858,50:1A7070,100:E07628&amp;height=220&amp;section=header&amp;text=Hailemariyam%20Kebede&amp;fontSize=46&amp;fontColor=ffffff&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=Technology%20Consultant%20and%20Developer%20%7C%20Co-Founder(CTO) %20%40%20Degan%20Technologies&amp;descSize=16&amp;descAlignY=58&amp;descColor=F2D5B8" />
 
 <br/>
 
