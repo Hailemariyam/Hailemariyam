@@ -295,8 +295,8 @@ npm install wenfit-validator
 
 ## 📊 GitHub Analytics
 
-<img height="175em" src="https://github-readme-stats.vercel.app/api?username=Hailemariyam&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=E07628&icon_color=1A7070&text_color=F2D5B8&include_all_commits=true&count_private=true" />
-<img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hailemariyam&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=E07628&text_color=F2D5B8" />
+<img height="175em" src="https://github-stats-extended.vercel.app/api?username=Hailemariyam&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=E07628&icon_color=1A7070&text_color=F2D5B8&include_all_commits=true&count_private=true" />
+<img height="175em" src="https://github-stats-extended.vercel.app/api/top-langs?username=Hailemariyam&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=E07628&text_color=F2D5B8" />
 
 <br/>
 
