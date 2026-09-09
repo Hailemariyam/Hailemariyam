@@ -1,12 +1,16 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D5858,50:1A7070,100:E07628&height=220&section=header&text=Hailemariyam%20Kebede&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Software%20Engineer%20%7C%20Mobile%20%26%20Web%20App%20Developer%20%40%20Trust%20Technologies&descSize=16&descAlignY=58&descColor=F2D5B8" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D5858,50:1A7070,100:E07628&height=220&section=header&text=Hailemariyam%20Kebede&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Freelance%20Full-Stack%20Software%20Engineer%20%7C%20Mobile%20and%20Web%20Developer&descSize=16&descAlignY=58&descColor=F2D5B8" />
 
 <br/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=18&pause=1200&color=E07628&center=true&vCenter=true&width=800&height=50&lines=🏗️+Full-Stack+%26+Mobile+Engineer+%7C+3%2B+Years+Shipping+Production+Software;⚡+Real-Time+Systems+%7C+RAHA+Ride+%26+Niku+Mobility;🚀+Creator+of+NyalaJS+%7C+Open+Source+on+npm;🌍+Full-Stack%2C+Mobile%2C+Backend+%26+DevOps" />
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=18&pause=1200&color=E07628&center=true&vCenter=true&width=800&height=50&lines=🏗️+Full-Stack+%26+Mobile+Engineer+%7C+3%2B+Years+Shipping+Production+Software;💻+Available+for+Freelance+and+Contract+Work;⚡+Real-Time+Systems+%7C+RAHA+Ride+and+Niku+Mobility;🚀+Creator+of+NyalaJS+%7C+Open+Source+on+npm" />
 
 <br/>
+
+![Status](https://img.shields.io/badge/🟢_Available_for_Freelance_Work-1A7070?style=for-the-badge)
+
+<br/><br/>
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-hailemariyam.tech-1A7070?style=for-the-badge)](https://hailemariyam.tech)
 [![Gmail](https://img.shields.io/badge/Gmail-E07628?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hailemariyam3298@gmail.com)
@@ -22,21 +26,31 @@
 
 <div align="center">
 
+[`{ about }`](#about) · [`{ experience }`](#experience) · [`{ tech }`](#tech) · [`{ projects }`](#projects) · [`{ open source }`](#open-source) · [`{ stats }`](#stats) · [`{ hire me }`](#hire-me)
+
+</div>
+
+---
+
+<a id="about"></a>
+<div align="center">
+
 ## `{ about: me }`
 
 </div>
 
 ```typescript
 const hailemariyam = {
-  role       : "Full-Stack Software Engineer · Mobile Application Developer",
+  role       : "Freelance Full-Stack Software Engineer · Mobile Application Developer",
   location   : "Addis Ababa, Ethiopia 🇪🇹",
   experience : "3+ years",
-  current    : "Full-Stack Software Engineer @ Trust Technologies",
-  previously : "Full-Stack Engineer @ Degan Technologies (2024–2026)",
+  status     : "🟢 Available for freelance and contract work",
+  previously : ["Full-Stack Software Engineer @ Trust Technologies (2026)",
+                "Full-Stack Engineer @ Degan Technologies (2024–2026)"],
   stack      : ["TypeScript", "JavaScript", "Node.js", "Express.js", "Laravel",
                 "React", "Next.js", "Vue.js", "Flutter", "Python"],
   shipped    : ["RAHA Ride — real-time ride-hailing platform",
-                "Niku Mobility — real-time smart parking app",
+                "Niku Mobility — real-time smart parking app (personal project)",
                 "MAHDER — offline-first digital archive platform",
                 "NyalaJS — enterprise TypeScript framework, 15+ packages (creator)"],
   quote      : "I build systems that scale, not just applications that run.",
@@ -45,11 +59,15 @@ const hailemariyam = {
 
 ---
 
+<a id="experience"></a>
 <div align="center">
 
 ## 💼 Experience
 
 </div>
+
+> **🟢 Freelance Full-Stack & Mobile Developer** — Addis Ababa, Ethiopia · *Currently*
+> Taking on full-stack web and mobile projects — from architecture through deployment. Open to remote, contract, and short-term engagements. [Get in touch →](mailto:hailemariyam3298@gmail.com)
 
 <table>
 <tr>
@@ -57,9 +75,9 @@ const hailemariyam = {
 
 **Trust Technologies** — Addis Ababa, Ethiopia
 *Mobile Application Developer → Full-Stack Software Engineer*
-`Feb 2026 – Present`
+`2026`
 
-Progressed from building cross-platform mobile apps with Flutter into full-stack development across frontend, backend, API, and database layers. Building **RAHA Ride** (real-time ride-hailing) and **Niku Mobility** (real-time smart parking), including REST APIs, auth, and real-time application functionality.
+Progressed from building cross-platform mobile apps with Flutter into full-stack development across frontend, backend, API, and database layers. Built **RAHA Ride**, a real-time ride-hailing platform, including REST APIs, auth, and real-time application functionality.
 
 </td>
 <td width="50%" valign="top">
@@ -76,6 +94,7 @@ Built and maintained production web and mobile platforms across e-learning, digi
 
 ---
 
+<a id="tech"></a>
 <div align="center">
 
 ## 🛠️ Tech Arsenal
@@ -103,6 +122,7 @@ Built and maintained production web and mobile platforms across e-learning, digi
 
 ---
 
+<a id="projects"></a>
 <div align="center">
 
 ## 🚀 Flagship Project — RAHA Ride
@@ -157,7 +177,7 @@ Requirements → architecture → development → testing → production deploym
 
 | Project | What it does |
 |---|---|
-| **Niku Mobility** | Real-time smart parking app — mobile, backend, and API integration for live parking workflows |
+| **Niku Mobility** *(personal project)* | Real-time smart parking app — mobile, backend, and API integration for live parking workflows |
 | **MAHDER (ማህደር)** | Smart digital records & archive platform with role-based access and **offline-first sync** |
 | **SaaS Starter Kit** | Modular multi-tenant SaaS architecture — shared-database and dedicated-database tenant isolation strategies |
 | **Yene** | Property & vehicle marketplace — listings, agent workflows, B2B, and auctions |
@@ -165,6 +185,7 @@ Requirements → architecture → development → testing → production deploym
 
 ---
 
+<a id="open-source"></a>
 <div align="center">
 
 ## 📦 Open Source
@@ -268,6 +289,7 @@ npm install wenfit-validator
 
 ---
 
+<a id="stats"></a>
 <div align="center">
 
 ## 📊 GitHub Analytics
@@ -283,6 +305,10 @@ npm install wenfit-validator
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Hailemariyam&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=E07628&line=1A7070&point=E07628&area=true" />
 
+<br/>
+
+<img src="https://github-profile-trophy.vercel.app/?username=Hailemariyam&theme=darkhub&no-frame=true&no-bg=true&row=1&column=6&margin-w=8" />
+
 </div>
 
 ---
@@ -291,15 +317,30 @@ npm install wenfit-validator
 
 ## 🎯 Currently Building
 
-![Apps](https://img.shields.io/badge/⚡_Full--Stack_Web_%26_Mobile_Apps-0D5858?style=for-the-badge)
-![RT](https://img.shields.io/badge/🔄_Real--Time_Systems-E07628?style=for-the-badge)
-![Nyala](https://img.shields.io/badge/🏗️_NyalaJS_Framework-1A7070?style=for-the-badge)
-![OSS](https://img.shields.io/badge/📦_Open_Source_npm_Libraries-E07628?style=for-the-badge)
-![DevOps](https://img.shields.io/badge/☁️_Cloud_Deployment_%26_DevOps-0D5858?style=for-the-badge)
+![Freelance](https://img.shields.io/badge/💻_Open_to_Freelance_Work-0D5858?style=for-the-badge)
+![Apps](https://img.shields.io/badge/⚡_Full--Stack_Web_and_Mobile_Apps-E07628?style=for-the-badge)
+![RT](https://img.shields.io/badge/🔄_Real--Time_Systems-1A7070?style=for-the-badge)
+![Nyala](https://img.shields.io/badge/🏗️_NyalaJS_Framework-E07628?style=for-the-badge)
+![OSS](https://img.shields.io/badge/📦_Open_Source_npm_Libraries-0D5858?style=for-the-badge)
 
 <br/><br/>
 
 🎓 **BSc in Software Engineering** — Wollo University, Ethiopia · 2019–2024
+
+</div>
+
+---
+
+<a id="hire-me"></a>
+<div align="center">
+
+## 🤝 Let's Work Together
+
+I'm currently freelancing and open to new full-stack and mobile projects — web apps, real-time systems, APIs, or turning an idea into a production build.
+
+[![Hire Me](https://img.shields.io/badge/📩_Get_In_Touch-E07628?style=for-the-badge)](mailto:hailemariyam3298@gmail.com)
+[![Portfolio](https://img.shields.io/badge/🌐_See_My_Work-1A7070?style=for-the-badge)](https://hailemariyam.tech)
+[![LinkedIn](https://img.shields.io/badge/💼_Connect_on_LinkedIn-0D5858?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/hailemariyam-kebede-1b6066296)
 
 <br/>
 
