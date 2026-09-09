@@ -1,288 +1,354 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>README Preview (GitHub Dark)</title>
-<style>
-  :root{
-    --canvas: #0d1117;
-    --canvas-inset: #010409;
-    --surface: #161b22;
-    --surface-2: #1c2129;
-    --border: #30363d;
-    --border-muted: #21262d;
-    --fg: #e6edf3;
-    --fg-muted: #8b949e;
-    --link: #4493f8;
-    --accent-orange: #E07628;
-    --accent-teal: #1A7070;
-    --banner-bg: #112d4e;
-    --banner-border: #1f6feb;
-    --banner-fg: #cae8ff;
-  }
-  *{ box-sizing: border-box; }
-  html, body{
-    background: var(--canvas-inset);
-    color: var(--fg);
-    margin: 0;
-    padding: 0;
-  }
-  body{
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    font-size: 16px;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  .shell{
-    max-width: 1012px;
-    margin: 0 auto;
-    padding: 24px 16px 64px;
-  }
-  .notice{
-    background: var(--banner-bg);
-    border: 1px solid var(--banner-border);
-    color: var(--banner-fg);
-    border-radius: 6px;
-    padding: 14px 16px;
-    margin-bottom: 20px;
-    font-size: 13.5px;
-    line-height: 1.55;
-  }
-  .notice strong{ color: #fff; }
-  .notice code{
-    background: rgba(255,255,255,0.08);
-    padding: 1px 5px;
-    border-radius: 4px;
-    font-size: 12.5px;
-  }
-  .repo-chrome{
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    background: var(--canvas);
-    overflow: hidden;
-  }
-  .repo-chrome-bar{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 16px;
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-    font-size: 13px;
-    color: var(--fg-muted);
-  }
-  .repo-chrome-bar .dot{
-    width: 10px; height: 10px; border-radius: 50%;
-    background: var(--border);
-    display:inline-block;
-  }
-  .repo-chrome-bar .fname{
-    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
-    color: var(--fg);
-  }
-  .markdown-body{
-    padding: 32px 40px 40px;
-  }
-  .markdown-body img{ max-width: 100%; }
-  .markdown-body table{
-    border-collapse: collapse;
-    width: 100%;
-    margin: 16px 0;
-    overflow-x: auto;
-    display: block;
-  }
-  .markdown-body table th,
-  .markdown-body table td{
-    border: 1px solid var(--border);
-    padding: 6px 13px;
-  }
-  .markdown-body table tr{
-    background: var(--canvas);
-    border-top: 1px solid var(--border-muted);
-  }
-  .markdown-body table tr:nth-child(2n){
-    background: var(--surface);
-  }
-  .markdown-body h1, .markdown-body h2{
-    border-bottom: 1px solid var(--border-muted);
-    padding-bottom: 0.3em;
-    margin-top: 24px;
-    margin-bottom: 16px;
-    font-weight: 600;
-    text-wrap: balance;
-  }
-  .markdown-body h3{
-    margin-top: 24px;
-    margin-bottom: 16px;
-    font-weight: 600;
-  }
-  .markdown-body p{ margin: 0 0 16px; }
-  .markdown-body a{ color: var(--link); text-decoration: none; }
-  .markdown-body a:hover{ text-decoration: underline; }
-  .markdown-body hr{
-    height: .25em;
-    padding: 0;
-    margin: 24px 0;
-    background-color: var(--border-muted);
-    border: 0;
-  }
-  .markdown-body code{
-    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
-    background: rgba(110,118,129,0.4);
-    padding: .2em .4em;
-    border-radius: 6px;
-    font-size: 85%;
-  }
-  .markdown-body pre{
-    background: var(--surface);
-    border-radius: 6px;
-    padding: 16px;
-    overflow-x: auto;
-    font-size: 85%;
-    line-height: 1.45;
-  }
-  .markdown-body pre code{
-    background: none;
-    padding: 0;
-    border-radius: 0;
-  }
-  .markdown-body blockquote{
-    margin: 0 0 16px;
-    padding: 0 1em;
-    color: var(--fg-muted);
-    border-left: .25em solid var(--border);
-  }
-  .markdown-body blockquote > p{ margin-bottom: 8px; }
-  footer.meta{
-    max-width: 1012px;
-    margin: 18px auto 0;
-    padding: 0 16px;
-    color: var(--fg-muted);
-    font-size: 12.5px;
-    text-align: center;
-  }
-  footer.meta a{ color: var(--link); }
-  .broken-img-help{
-    margin-top: 6px;
-  }
-</style>
-</head>
-<body>
-  <div class="shell">
-    <div class="notice">
-      <strong>Preview only, not part of the README.</strong>
-      This reproduces GitHub's dark-theme README renderer (same fonts, spacing, and colors) so you can check layout, wording, and links before pushing.
-      The badge/stat images below are fetched live from their real hosts (shields.io, skillicons.dev, capsule-render, vercel.app, etc.) — if one is still blank here, it's that service being slow or unreachable right now, in this browser, not something wrong with the file. Reload the page or check on your actual GitHub profile to confirm.
-    </div>
-    <div class="repo-chrome">
-      <div class="repo-chrome-bar">
-        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-        <span class="fname">github.com/Hailemariyam/Hailemariyam &middot; README.md</span>
-      </div>
-      <div class="markdown-body" id="content">Rendering…</div>
-    </div>
-  </div>
-  <footer class="meta">Rendered locally in your browser with marked.js — no data leaves this page.</footer>
+<div align="center">
 
-<script>
-/**
- * marked v18.0.12 - a markdown parser
- * Copyright (c) 2018-2026, MarkedJS. (MIT License)
- * Copyright (c) 2011-2018, Christopher Jeffrey. (MIT License)
- * https://github.com/markedjs/marked
- */
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D5858,50:1A7070,100:E07628&height=220&section=header&text=Hailemariyam%20Kebede&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Freelance%20Full-Stack%20Software%20Engineer%20%7C%20Mobile%20and%20Web%20Developer&descSize=16&descAlignY=58&descColor=F2D5B8" />
 
-/**
- * DO NOT EDIT THIS FILE
- * The code in this file is generated from files in ./src/
- */
-(function(g,f){if(typeof exports=="object"&&typeof module<"u"){module.exports=f()}else if("function"==typeof define && define.amd){define("marked",f)}else {g["marked"]=f()}}(typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : this,function(){var exports={};var __exports=exports;var module={exports};
-"use strict";var j=Object.defineProperty;var we=Object.getOwnPropertyDescriptor;var ye=Object.getOwnPropertyNames;var Pe=Object.prototype.hasOwnProperty;var Se=(l,e)=>{for(var t in e)j(l,t,{get:e[t],enumerable:!0})},_e=(l,e,t,n)=>{if(e&&typeof e=="object"||typeof e=="function")for(let s of ye(e))!Pe.call(l,s)&&s!==t&&j(l,s,{get:()=>e[s],enumerable:!(n=we(e,s))||n.enumerable});return l};var $e=l=>_e(j({},"__esModule",{value:!0}),l);var zt={};Se(zt,{Hooks:()=>P,Lexer:()=>x,Marked:()=>D,Parser:()=>b,Renderer:()=>y,TextRenderer:()=>_,Tokenizer:()=>w,defaults:()=>R,getDefaults:()=>E,lexer:()=>Lt,marked:()=>g,options:()=>wt,parse:()=>_t,parseInline:()=>St,parser:()=>$t,setOptions:()=>yt,use:()=>Re,walkTokens:()=>Pt});module.exports=$e(zt);function E(){return{async:!1,breaks:!1,extensions:null,gfm:!0,hooks:null,pedantic:!1,renderer:null,silent:!1,tokenizer:null,walkTokens:null}}var R=E();function F(l){R=l}var M={exec:()=>null};function I(l){let e=[];return t=>{let n=Math.max(0,Math.min(3,t-1)),s=e[n];return s||(s=l(n),e[n]=s),s}}function k(l,e=""){let t=typeof l=="string"?l:l.source,n={replace:(s,r)=>{let o=typeof r=="string"?r:r.source;return o=o.replace(m.caret,"$1"),t=t.replace(s,o),n},getRegex:()=>new RegExp(t,e)};return n}var Le=((l="")=>{try{return!!new RegExp("(?<=1)(?<!1)"+l)}catch{return!1}})(),m={codeRemoveIndent:/^(?: {1,4}| {0,3}\t)/gm,outputLinkReplace:/\\([\[\]])/g,indentCodeCompensation:/^(\s+)(?:```)/,beginningSpace:/^\s+/,endingHash:/#$/,startingSpaceChar:/^ /,endingSpaceChar:/ $/,endingSpaceTabChar:/[ \t]$/,nonSpaceChar:/[^ ]/,newLineCharGlobal:/\n/g,tabCharGlobal:/\t/g,multipleSpaceGlobal:/\s+/g,blankLine:/^[ \t]*$/,doubleBlankLine:/\n[ \t]*\n[ \t]*$/,blockquoteStart:/^ {0,3}>/,blockquoteSetextReplace:/\n {0,3}((?:=+|-+) *)(?=\n|$)/g,blockquoteSetextReplace2:/^ {0,3}>[ \t]?/gm,listReplaceNesting:/^ {1,4}(?=( {4})*[^ ])/g,listIsTask:/^\[[ xX]\] +\S/,listReplaceTask:/^\[[ xX]\] +/,listTaskCheckbox:/\[[ xX]\]/,anyLine:/\n.*\n/,hrefBrackets:/^<(.*)>$/,tableDelimiter:/[:|]/,tableAlignChars:/^\||\| *$/g,tableRowBlankLine:/\n[ \t]*$/,tableAlignRight:/^ *-+: *$/,tableAlignCenter:/^ *:-+: *$/,tableAlignLeft:/^ *:-+ *$/,startATag:/^<a /i,endATag:/^<\/a>/i,startPreScriptTag:/^<(pre|code|kbd|script)(\s|>)/i,endPreScriptTag:/^<\/(pre|code|kbd|script)(\s|>)/i,startAngleBracket:/^</,endAngleBracket:/>$/,pedanticHrefTitle:/^([^'"]*[^\s])\s+(['"])(.*)\2/,unicodeAlphaNumeric:/[\p{L}\p{N}]/u,escapeTest:/[&<>"']/,escapeReplace:/[&<>"']/g,escapeTestNoEncode:/[<>"']|&(?!(#\d{1,7}|#[Xx][a-fA-F0-9]{1,6}|\w+);)/,escapeReplaceNoEncode:/[<>"']|&(?!(#\d{1,7}|#[Xx][a-fA-F0-9]{1,6}|\w+);)/g,caret:/(^|[^\[])\^/g,percentDecode:/%25/g,findPipe:/\|/g,splitPipe:/ \|/,slashPipe:/\\\|/g,carriageReturn:/\r\n|\r/g,spaceLine:/^ +$/gm,notSpaceStart:/^\S*/,endingNewline:/\n$/,listItemRegex:l=>new RegExp(`^( {0,3}${l})((?:[	 ][^\\n]*)?(?:\\n|$))`),nextBulletRegex:I(l=>new RegExp(`^ {0,${l}}(?:[*+-]|\\d{1,9}[.)])((?:[ 	][^\\n]*)?(?:\\n|$))`)),hrRegex:I(l=>new RegExp(`^ {0,${l}}((?:- *){3,}|(?:_ *){3,}|(?:\\* *){3,})(?:\\n+|$)`)),fencesBeginRegex:I(l=>new RegExp(`^ {0,${l}}(?:\`\`\`|~~~)`)),headingBeginRegex:I(l=>new RegExp(`^ {0,${l}}#`)),htmlBeginRegex:I(l=>new RegExp(`^ {0,${l}}<(?:[a-z].*>|!--)`,"i")),blockquoteBeginRegex:I(l=>new RegExp(`^ {0,${l}}>`))},ze=/^(?:[ \t]*(?:\n|$))+/,Ee=/^((?: {4}| {0,3}\t)[^\n]+(?:\n(?:[ \t]*(?:\n|$))*)?)+/,Me=/^ {0,3}(`{3,}(?=[^`\n]*(?:\n|$))|~{3,})([^\n]*)(?:\n|$)(?:|([\s\S]*?)(?:\n|$))(?: {0,3}\1[~`]* *(?=\n|$)|$)/,v=/^ {0,3}((?:-[\t ]*){3,}|(?:_[ \t]*){3,}|(?:\*[ \t]*){3,})(?:\n+|$)/,Ae=/^ {0,3}(#{1,6})(?=\s|$)(.*)(?:\n+|$)/,K=/ {0,3}(?:[*+-]|\d{1,9}[.)])/,ae=/^(?!bull |blockCode|fences|blockquote|heading|html|table)((?:.|\n(?!\s*?\n|bull |blockCode|fences|blockquote|heading|html|table))+?)\n {0,3}(=+|-+) *(?:\n+|$)/,le=k(ae).replace(/bull/g,K).replace(/blockCode/g,/(?: {4}| {0,3}\t)/).replace(/fences/g,/ {0,3}(?:`{3,}|~{3,})/).replace(/blockquote/g,/ {0,3}>/).replace(/heading/g,/ {0,3}#{1,6}(?:\s|$)/).replace(/html/g,/ {0,3}<[^\n>]+>\n/).replace(/\|table/g,"").getRegex(),Ie=k(ae).replace(/bull/g,K).replace(/blockCode/g,/(?: {4}| {0,3}\t)/).replace(/fences/g,/ {0,3}(?:`{3,}|~{3,})/).replace(/blockquote/g,/ {0,3}>/).replace(/heading/g,/ {0,3}#{1,6}(?:\s|$)/).replace(/html/g,/ {0,3}<[^\n>]+>\n/).replace(/table/g,/ {0,3}\|?(?:[:\- ]*\|)+[\:\- ]*\n/).getRegex(),W=/^([^\n]+(?:\n(?!hr|heading|lheading|blockquote|fences|list|html|table|[ \t]+\n)[^\n]+)*)/,Ce=/^[^\n]+/,X=/(?!\s*\])(?:\\[\s\S]|[^\[\]\\])+/,Be=k(/^ {0,3}\[(label)\]: *(?:\n[ \t]*)?([^<\s][^\s]*|<.*?>)(?:(?: +(?:\n[ \t]*)?| *\n[ \t]*)(title))? *(?:\n+|$)/).replace("label",X).replace("title",/(?:"(?:\\"?|[^"\\])*"|'[^'\n]*(?:\n[^'\n]+)*\n?'|\([^()]*\))/).getRegex(),De=k(/^(bull)([ \t][^\n]*?)?(?:\n|$)/).replace(/bull/g,K).getRegex(),Q="address|article|aside|base|basefont|blockquote|body|caption|center|col|colgroup|dd|details|dialog|dir|div|dl|dt|fieldset|figcaption|figure|footer|form|frame|frameset|h[1-6]|head|header|hr|html|iframe|legend|li|link|main|menu|menuitem|meta|nav|noframes|ol|optgroup|option|p|param|search|section|summary|table|tbody|td|tfoot|th|thead|title|tr|track|ul",J=/<!--(?:-?>|[\s\S]*?(?:-->|$))/,qe=k("^ {0,3}(?:<(script|pre|style|textarea)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n*|$)|comment[^\\n]*(\\n+|$)|<\\?[\\s\\S]*?(?:\\?>[^\\n]*\\n*|$)|<![A-Z][\\s\\S]*?(?:>[^\\n]*\\n*|$)|<!\\[CDATA\\[[\\s\\S]*?(?:\\]\\]>[^\\n]*\\n*|$)|</?(tag)(?: +|\\n|/?>)[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$)|<(?!script|pre|style|textarea)([a-z][a-z0-9-]*)(?:attribute)*? */?>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$)|</(?!script|pre|style|textarea)[a-z][a-z0-9-]*\\s*>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$))","i").replace("comment",J).replace("tag",Q).replace("attribute",/ +[a-zA-Z:_][\w.:-]*(?: *= *"[^"\n]*"| *= *'[^'\n]*'| *= *[^\s"'=<>`]+)?/).getRegex(),ue=l=>k(W).replace("hr",v).replace("heading"," {0,3}#{1,6}(?:\\s|$)").replace("|lheading","").replace("|table","").replace("blockquote"," {0,3}>").replace("fences"," {0,3}(?:`{3,}(?=[^`\\n]*(?:\\n|$))|~~~)[^\\n]*(?:\\n|$)").replace("list",l).replace("html","</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag",Q).getRegex(),ve=ue(/ {0,3}(?:[*+-]|1[.)])[ \t]+[^ \t\n]/),He=ue(/ {0,3}(?:[*+-]|\d{1,9}[.)])(?:[ \t]|\n|$)/),Ze=k(/^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/).replace("paragraph",He).getRegex(),V={blockquote:Ze,code:Ee,def:Be,fences:Me,heading:Ae,hr:v,html:qe,lheading:le,list:De,newline:ze,paragraph:ve,table:M,text:Ce},ie=k("^ *([^\\n ].*)\\n {0,3}((?:\\| *)?:?-+:? *(?:\\| *:?-+:? *)*(?:\\| *)?)(?:\\n((?:(?! *\\n|hr|heading|blockquote|code|fences|list|html).*(?:\\n|$))*)\\n*|$)").replace("hr",v).replace("heading"," {0,3}#{1,6}(?:\\s|$)").replace("blockquote"," {0,3}>").replace("code","(?: {4}| {0,3}	)[^\\n]").replace("fences"," {0,3}(?:`{3,}(?=[^`\\n]*(?:\\n|$))|~~~)[^\\n]*(?:\\n|$)").replace("list"," {0,3}(?:[*+-]|1[.)])[ \\t]").replace("html","</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag",Q).getRegex(),Ge={...V,lheading:Ie,table:ie,paragraph:k(W).replace("hr",v).replace("heading"," {0,3}#{1,6}(?:\\s|$)").replace("|lheading","").replace("table",ie).replace("blockquote"," {0,3}>").replace("fences"," {0,3}(?:`{3,}(?=[^`\\n]*(?:\\n|$))|~~~)[^\\n]*(?:\\n|$)").replace("list"," {0,3}(?:[*+-]|1[.)])[ \\t]+[^ \\t\\n]").replace("html","</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag",Q).getRegex()},Qe={...V,html:k(`^ *(?:comment *(?:\\n|\\s*$)|<(tag)[\\s\\S]+?</\\1> *(?:\\n{2,}|\\s*$)|<tag(?:"[^"]*"|'[^']*'|\\s[^'"/>\\s]*)*?/?> *(?:\\n{2,}|\\s*$))`).replace("comment",J).replace(/tag/g,"(?!(?:a|em|strong|small|s|cite|q|dfn|abbr|data|time|code|var|samp|kbd|sub|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo|span|br|wbr|ins|del|img)\\b)\\w+(?!:|[^\\w\\s@]*@)\\b").getRegex(),def:/^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/,heading:/^(#{1,6})(.*)(?:\n+|$)/,fences:M,lheading:/^(.+?)\n {0,3}(=+|-+) *(?:\n+|$)/,paragraph:k(W).replace("hr",v).replace("heading",` *#{1,6} *[^
-]`).replace("lheading",le).replace("|table","").replace("blockquote"," {0,3}>").replace("|fences","").replace("|list","").replace("|html","").replace("|tag","").getRegex()},Ne=/^\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/,je=/^(`+)([^`]|[^`][\s\S]*?[^`])\1(?!`)/,pe=/^( {2,}|\\)\n(?!\s*$)/,Fe=/^(`+|[^`])(?:(?= {2,}\n)|[\s\S]*?(?:(?=[\\<!\[`*_]|\b_|$)|[^ ](?= {2,}\n)))/,$=/[\p{P}\p{S}]/u,C=/[\s\p{P}\p{S}]/u,H=/[^\s\p{P}\p{S}]/u,Ue=k(/^((?![*_])punctSpace)/,"u").replace(/punctSpace/g,C).getRegex(),Ke=/[\p{Pi}\p{Ps}"']/u,ce=/(?!~)[\p{P}\p{S}]/u,We=/(?!~)[\s\p{P}\p{S}]/u,Xe=/(?:[^\s\p{P}\p{S}]|~)/u,Je=k(/link|precode-code|html/,"g").replace("link",/\[(?:[^\[\]`]|(?<a>`+)[^`]+\k<a>(?!`))*?\]\((?:\\[\s\S]|[^\\\(\)]|\((?:\\[\s\S]|[^\\\(\)])*\))*\)/).replace("precode-",Le?"(?<!`)()":"(^^|[^`])").replace("code",/(?<b>`+)[^`]+\k<b>(?!`)/).replace("html",/<(?! )[^<>]*?>/).getRegex(),he=/^(?:\*+(?:((?!\*)punct)|([^\s*]))?)|^_+(?:((?!_)punct)|([^\s_]))?/,Ve=k(he,"u").replace(/punct/g,$).getRegex(),Ye=k(he,"u").replace(/punct/g,ce).getRegex(),et=/^(?:\*+(?:((?!\*)(?!openQuote)punct)|([^\s*]))?)|^_+(?:((?!_)(?!openQuote)punct)|([^\s_]))?/,tt=k(et,"u").replace(/openQuote/g,Ke).replace(/punct/g,$).getRegex(),ke="^[^_*]*?__[^_*]*?\\*[^_*]*?(?=__)|[^*]+(?=[^*])|(?!\\*)punct(\\*+)(?=[\\s]|$)|notPunctSpace(\\*+)(?!\\*)(?=punctSpace|$)|(?!\\*)punctSpace(\\*+)(?=notPunctSpace)|[\\s](\\*+)(?!\\*)(?=punct)|(?!\\*)punct(\\*+)(?!\\*)(?=punct)|notPunctSpace(\\*+)(?=notPunctSpace)",nt=k(ke,"gu").replace(/notPunctSpace/g,H).replace(/punctSpace/g,C).replace(/punct/g,$).getRegex(),rt=k(ke,"gu").replace(/notPunctSpace/g,Xe).replace(/punctSpace/g,We).replace(/punct/g,ce).getRegex(),st="^[^_*]*?__[^_*]*?\\*[^_*]*?(?=__)|[^*]+(?=[^*])|(?!\\*)punct(\\*+)(?=[\\s]|$)|notPunctSpace(\\*+)(?!\\*)(?=punctSpace|$)|(?!\\*)[\\s](\\*+)(?=notPunctSpace)|[\\s](\\*+)(?!\\*)(?=punct)|(?!\\*)punct(\\*+)(?!\\*)(?=punct)|(?:(?!\\*)punct|notPunctSpace)(\\*+)(?!\\*)(?=notPunctSpace)",it=k(st,"gu").replace(/notPunctSpace/g,H).replace(/punctSpace/g,C).replace(/punct/g,$).getRegex(),ot=k("^[^_*]*?\\*\\*[^_*]*?_[^_*]*?(?=\\*\\*)|[^_]+(?=[^_])|(?!_)punct(_+)(?=[\\s]|$)|notPunctSpace(_+)(?!_)(?=punctSpace|$)|(?!_)punctSpace(_+)(?=notPunctSpace)|[\\s](_+)(?!_)(?=punct)|(?!_)punct(_+)(?!_)(?=punct)","gu").replace(/notPunctSpace/g,H).replace(/punctSpace/g,C).replace(/punct/g,$).getRegex(),at="^[^_*]*?\\*\\*[^_*]*?_[^_*]*?(?=\\*\\*)|[^_]+(?=[^_])|(?!_)punct(_+)(?=[\\s]|$)|notPunctSpace(_+)(?!_)(?=punctSpace|$)|(?!_)[\\s](_+)(?=notPunctSpace)|[\\s](_+)(?!_)(?=punct)|(?!_)punct(_+)(?!_)(?=punct)|(?:(?!_)punct|notPunctSpace)(_+)(?!_)(?=notPunctSpace)",lt=k(at,"gu").replace(/notPunctSpace/g,H).replace(/punctSpace/g,C).replace(/punct/g,$).getRegex(),ut=k(/^~~?(?:((?!~)punct)|[^\s~])/,"u").replace(/punct/g,$).getRegex(),pt="^[^~]+(?=[^~])|(?!~)punct(~~?)(?=[\\s]|$)|notPunctSpace(~~?)(?!~)(?=punctSpace|$)|(?!~)punctSpace(~~?)(?=notPunctSpace)|[\\s](~~?)(?!~)(?=punct)|(?!~)punct(~~?)(?!~)(?=punct)|notPunctSpace(~~?)(?=notPunctSpace)",ct=k(pt,"gu").replace(/notPunctSpace/g,H).replace(/punctSpace/g,C).replace(/punct/g,$).getRegex(),ht=k(/\\(punct)/,"gu").replace(/punct/g,$).getRegex(),kt=k(/^<(scheme:[^\s\x00-\x1f<>]*|email)>/).replace("scheme",/[a-zA-Z][a-zA-Z0-9+.-]{1,31}/).replace("email",/[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+(@)[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+(?![-_])/).getRegex(),dt=k(J).replace("(?:-->|$)","-->").getRegex(),gt=k("^comment|^</[a-zA-Z][a-zA-Z0-9-]*\\s*>|^<[a-zA-Z][a-zA-Z0-9-]*(?:attribute)*?\\s*/?>|^<\\?[\\s\\S]*?\\?>|^<![a-zA-Z]+\\s[\\s\\S]*?>|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>").replace("comment",dt).replace("attribute",/\s+[a-zA-Z:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/).getRegex(),ft=/\[(?:\\[\s\S]|[^\[\]\\])*\]/,G=k(/(?:\[(?:brackets|\\[\s\S]|[^\[\]\\])*\]|\\[\s\S]|`+(?!`)[^`]*?`+(?!`)|``+(?=\])|[^\[\]\\`])*?/).replace("brackets",ft).getRegex(),mt=k(/^!?\[(label)\]\(\s*(href)(?:(?:[ \t]+(?:\n[ \t]*)?|\n[ \t]*)(title))?\s*\)/).replace("label",G).replace("href",/<(?:\\.|[^\n<>\\])+>|[^ \t\n\x00-\x1f]+|(?=\))/).replace("title",/"(?:\\"?|[^"\\])*"|'(?:\\'?|[^'\\])*'|\((?:\\\)?|[^)\\])*\)/).getRegex(),de=k(/^!?\[(label)\]\[(ref)\]/).replace("label",G).replace("ref",X).getRegex(),ge=k(/^!?\[(ref)\](?:\[\])?/).replace("ref",X).getRegex(),xt=k("reflink|nolink(?!\\()","g").replace("reflink",de).replace("nolink",ge).getRegex(),oe=/[hH][tT][tT][pP][sS]?|[fF][tT][pP]/,Y={_backpedal:M,anyPunctuation:ht,autolink:kt,blockSkip:Je,br:pe,code:je,del:M,delLDelim:M,delRDelim:M,emStrongLDelim:Ve,emStrongRDelimAst:nt,emStrongRDelimUnd:ot,escape:Ne,link:mt,nolink:ge,punctuation:Ue,reflink:de,reflinkSearch:xt,tag:gt,text:Fe,url:M},bt={...Y,emStrongLDelim:tt,emStrongRDelimAst:it,emStrongRDelimUnd:lt,link:k(/^!?\[(label)\]\((.*?)\)/).replace("label",G).getRegex(),reflink:k(/^!?\[(label)\]\s*\[([^\]]*)\]/).replace("label",G).getRegex()},U={...Y,emStrongRDelimAst:rt,emStrongLDelim:Ye,delLDelim:ut,delRDelim:ct,url:k(/^((?:protocol):\/\/|www\.)(?:[a-zA-Z0-9\-]+\.?)+[^\s<]*|^email/).replace("protocol",oe).replace("email",/[A-Za-z0-9._+-]+(@)[a-zA-Z0-9-_]+(?:\.[a-zA-Z0-9-_]*[a-zA-Z0-9])+(?![\w-])/).getRegex(),_backpedal:/(?:[^?!.,:;*_'"~()&]+|\([^)]*\)|&(?![a-zA-Z0-9]+;$)|[?!.,:;*_'"~)]+(?!$))+/,del:/^(~~?)(?=[^\s~])((?:\\[\s\S]|[^\\])*?(?:\\[\s\S]|[^\s~\\]))\1(?=[^~]|$)/,text:k(/^(`+|~+|[^`~])(?:(?=[`~])|(?= {2,}\n)|(?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@)|[\s\S]*?(?:(?=[\\<!\[`*~_]|\b_|protocol:\/\/|www\.|$)|[^ ](?= {2,}\n)|[^a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-](?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@)))/).replace("protocol",oe).getRegex()},Rt={...U,br:k(pe).replace("{2,}","*").getRegex(),text:k(U.text).replace("\\b_","\\b_| {2,}\\n").replace(/\{2,\}/g,"*").getRegex()},Z={normal:V,gfm:Ge,pedantic:Qe},B={normal:Y,gfm:U,breaks:Rt,pedantic:bt};var Tt={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"},fe=l=>Tt[l];function T(l,e){if(e){if(m.escapeTest.test(l))return l.replace(m.escapeReplace,fe)}else if(m.escapeTestNoEncode.test(l))return l.replace(m.escapeReplaceNoEncode,fe);return l}function ee(l){try{l=encodeURI(l).replace(m.percentDecode,"%")}catch{return null}return l}function te(l,e){let t=l.replace(m.findPipe,(r,o,i)=>{let u=!1,a=o;for(;--a>=0&&i[a]==="\\";)u=!u;return u?"|":" |"}),n=t.split(m.splitPipe),s=0;if(n[0].trim()||n.shift(),n.length>0&&!n.at(-1)?.trim()&&n.pop(),e)if(n.length>e)n.splice(e);else for(;n.length<e;)n.push("");for(;s<n.length;s++)n[s]=n[s].trim().replace(m.slashPipe,"|");return n}function L(l,e,t){let n=l.length;if(n===0)return"";let s=0;for(;s<n;){let r=l.charAt(n-s-1);if(r===e&&!t)s++;else if(r!==e&&t)s++;else break}return l.slice(0,n-s)}function ne(l){let e=l.split(`
-`),t=e.length-1;for(;t>=0&&m.blankLine.test(e[t]);)t--;return e.length-t<=2?l:e.slice(0,t+1).join(`
-`)}function me(l,e){if(l.indexOf(e[1])===-1)return-1;let t=0;for(let n=0;n<l.length;n++)if(l[n]==="\\")n++;else if(l[n]===e[0])t++;else if(l[n]===e[1]&&(t--,t<0))return n;return t>0?-2:-1}function xe(l,e=0){let t=e,n="";for(let s of l)if(s==="	"){let r=4-t%4;n+=" ".repeat(r),t+=r}else n+=s,t++;return n}function be(l,e,t,n,s){let r=e.href,o=e.title||null,i=l[1].replace(s.other.outputLinkReplace,"$1"),u=l[0].charAt(0)==="!";n.state.inLink=!0;let a=n.state.linkEmitted,p=n.state.inRawBlock;n.state.linkEmitted=!1;let c=n.inlineTokens(i),h=n.state.linkEmitted;if(n.state.linkEmitted=a,n.state.inLink=!1,!u){if(h){n.state.inRawBlock=p;return}n.state.linkEmitted=!0}return{type:u?"image":"link",raw:t,href:r,title:o,text:i,tokens:c}}function Ot(l,e,t){let n=l.match(t.other.indentCodeCompensation);if(n===null)return e;let s=n[1];return e.split(`
-`).map(r=>{let o=r.match(t.other.beginningSpace);if(o===null)return r;let[i]=o;return r.slice(Math.min(i.length,s.length))}).join(`
-`)}var w=class{options;rules;lexer;constructor(e){this.options=e||R}space(e){let t=this.rules.block.newline.exec(e);if(t&&t[0].length>0)return{type:"space",raw:t[0]}}code(e){let t=this.rules.block.code.exec(e);if(t){let n=this.options.pedantic?t[0]:ne(t[0]),s=n.replace(this.rules.other.codeRemoveIndent,"");return{type:"code",raw:n,codeBlockStyle:"indented",text:s}}}fences(e){let t=this.rules.block.fences.exec(e);if(t){let n=t[0],s=Ot(n,t[3]||"",this.rules);return{type:"code",raw:n,lang:t[2]?t[2].trim().replace(this.rules.inline.anyPunctuation,"$1"):t[2],text:s}}}heading(e){let t=this.rules.block.heading.exec(e);if(t){let n=t[2].trim();if(this.rules.other.endingHash.test(n)){let s=L(n,"#");(this.options.pedantic||!s||this.rules.other.endingSpaceTabChar.test(s))&&(n=s.trim())}return{type:"heading",raw:L(t[0],`
-`),depth:t[1].length,text:n,tokens:this.lexer.inline(n)}}}hr(e){let t=this.rules.block.hr.exec(e);if(t)return{type:"hr",raw:L(t[0],`
-`)}}blockquote(e){let t=this.rules.block.blockquote.exec(e);if(t){let n=L(t[0],`
-`).split(`
-`),s="",r="",o=[];for(;n.length>0;){let i=!1,u=[],a;for(a=0;a<n.length;a++)if(this.rules.other.blockquoteStart.test(n[a]))u.push(n[a]),i=!0;else if(!i)u.push(n[a]);else break;n=n.slice(a);let p=u.join(`
-`),c=p.replace(this.rules.other.blockquoteSetextReplace,`
-    $1`).replace(this.rules.other.blockquoteSetextReplace2,"");s=s?`${s}
-${p}`:p,r=r?`${r}
-${c}`:c;let h=this.lexer.state.top;if(this.lexer.state.top=!0,this.lexer.blockTokens(c,o,!0),this.lexer.state.top=h,n.length===0)break;let d=o.at(-1);if(d?.type==="code")break;if(d?.type==="blockquote"){let O=d,f=n.join(`
-`),S=O.raw+`
-`+f.replace(this.rules.other.blockquoteSetextReplace2,""),z=this.blockquote(S);o[o.length-1]=z,s=`${s}
-${f}`,r=r.substring(0,r.length-O.text.length)+z.text;break}else if(d?.type==="list"){let O=d,f=O.raw+`
-`+n.join(`
-`),S=this.list(f);o[o.length-1]=S,s=s.substring(0,s.length-d.raw.length)+S.raw,r=r.substring(0,r.length-O.raw.length)+S.raw,n=f.substring(o.at(-1).raw.length).split(`
-`);continue}}return{type:"blockquote",raw:s,tokens:o,text:r}}}list(e){let t=this.rules.block.list.exec(e);if(t){let n=t[1].trim(),s=n.length>1,r={type:"list",raw:"",ordered:s,start:s?+n.slice(0,-1):"",loose:!1,items:[]};n=s?`\\d{1,9}\\${n.slice(-1)}`:`\\${n}`,this.options.pedantic&&(n=s?n:"[*+-]");let o=this.rules.other.listItemRegex(n),i=!1;for(;e;){let a=!1,p="",c="";if(!(t=o.exec(e))||this.rules.block.hr.test(e))break;p=t[0],e=e.substring(p.length);let h=xe(t[2].split(`
-`,1)[0],t[1].length),d=e.split(`
-`,1)[0],O=!h.trim(),f=0;if(this.options.pedantic?(f=2,c=h.trimStart()):O?f=t[1].length+1:(f=h.search(this.rules.other.nonSpaceChar),f=f>4?1:f,c=h.slice(f),f+=t[1].length),O&&this.rules.other.blankLine.test(d)&&(p+=d+`
-`,e=e.substring(d.length+1),a=!0),!a){let S=this.rules.other.nextBulletRegex(f),z=this.rules.other.hrRegex(f),re=this.rules.other.fencesBeginRegex(f),se=this.rules.other.headingBeginRegex(f),Te=this.rules.other.htmlBeginRegex(f),Oe=this.rules.other.blockquoteBeginRegex(f);for(;e;){let N=e.split(`
-`,1)[0],q;if(d=N,this.options.pedantic?(d=d.replace(this.rules.other.listReplaceNesting,"  "),q=d):q=d.replace(this.rules.other.tabCharGlobal,"    "),re.test(d)||se.test(d)||Te.test(d)||Oe.test(d)||S.test(d)||z.test(d))break;if(q.search(this.rules.other.nonSpaceChar)>=f||!d.trim())c+=`
-`+q.slice(f);else{if(O||h.replace(this.rules.other.tabCharGlobal,"    ").search(this.rules.other.nonSpaceChar)>=4||re.test(h)||se.test(h)||z.test(h))break;c+=`
-`+d}O=!d.trim(),p+=N+`
-`,e=e.substring(N.length+1),h=q.slice(f)}}r.loose||(i?r.loose=!0:this.rules.other.doubleBlankLine.test(p)&&(i=!0)),r.items.push({type:"list_item",raw:p,task:!!this.options.gfm&&this.rules.other.listIsTask.test(c),loose:!1,text:c,tokens:[]}),r.raw+=p}let u=r.items.at(-1);if(u)u.raw=u.raw.trimEnd(),u.text=u.text.trimEnd();else return;r.raw=r.raw.trimEnd();for(let a of r.items)if(this.lexer.state.top=!1,a.tokens=this.lexer.blockTokens(a.text,[]),!r.loose){let p=a.tokens.filter(h=>h.type==="space"),c=p.length>0&&p.some(h=>this.rules.other.anyLine.test(h.raw));r.loose=c}for(let a of r.items){let p=a.tokens[0];if(a.task&&(p?.type==="text"||p?.type==="paragraph")){a.text=a.text.replace(this.rules.other.listReplaceTask,""),p.raw=p.raw.replace(this.rules.other.listReplaceTask,""),p.text=p.text.replace(this.rules.other.listReplaceTask,"");for(let h=this.lexer.inlineQueue.length-1;h>=0;h--)if(this.rules.other.listIsTask.test(this.lexer.inlineQueue[h].src)){this.lexer.inlineQueue[h].src=this.lexer.inlineQueue[h].src.replace(this.rules.other.listReplaceTask,"");break}let c=this.rules.other.listTaskCheckbox.exec(a.raw);if(c){let h={type:"checkbox",raw:c[0]+" ",checked:c[0]!=="[ ]"};a.checked=h.checked,r.loose?a.tokens[0]&&["paragraph","text"].includes(a.tokens[0].type)&&"tokens"in a.tokens[0]&&a.tokens[0].tokens?(a.tokens[0].raw=h.raw+a.tokens[0].raw,a.tokens[0].text=h.raw+a.tokens[0].text,a.tokens[0].tokens.unshift(h)):a.tokens.unshift({type:"paragraph",raw:h.raw,text:h.raw,tokens:[h]}):a.tokens.unshift(h)}}else a.task&&(a.task=!1)}if(r.loose)for(let a of r.items){a.loose=!0;for(let p of a.tokens)p.type==="text"&&(p.type="paragraph")}return r}}html(e){let t=this.rules.block.html.exec(e);if(t){let n=ne(t[0]);return{type:"html",block:!0,raw:n,pre:t[1]==="pre"||t[1]==="script"||t[1]==="style",text:n}}}def(e){let t=this.rules.block.def.exec(e);if(t){let n=t[1].toLowerCase().replace(this.rules.other.multipleSpaceGlobal," "),s=t[2]?t[2].replace(this.rules.other.hrefBrackets,"$1").replace(this.rules.inline.anyPunctuation,"$1"):"",r=t[3]?t[3].substring(1,t[3].length-1).replace(this.rules.inline.anyPunctuation,"$1"):t[3];return{type:"def",tag:n,raw:L(t[0],`
-`),href:s,title:r}}}table(e){let t=this.rules.block.table.exec(e);if(!t||!this.rules.other.tableDelimiter.test(t[2]))return;let n=te(t[1]),s=t[2].replace(this.rules.other.tableAlignChars,"").split("|"),r=t[3]?.trim()?t[3].replace(this.rules.other.tableRowBlankLine,"").split(`
-`):[],o={type:"table",raw:L(t[0],`
-`),header:[],align:[],rows:[]};if(n.length===s.length){for(let i of s)this.rules.other.tableAlignRight.test(i)?o.align.push("right"):this.rules.other.tableAlignCenter.test(i)?o.align.push("center"):this.rules.other.tableAlignLeft.test(i)?o.align.push("left"):o.align.push(null);for(let i=0;i<n.length;i++)o.header.push({text:n[i],tokens:this.lexer.inline(n[i]),header:!0,align:o.align[i]});for(let i of r)o.rows.push(te(i,o.header.length).map((u,a)=>({text:u,tokens:this.lexer.inline(u),header:!1,align:o.align[a]})));return o}}lheading(e){let t=this.rules.block.lheading.exec(e);if(t){let n=t[1].trim();return{type:"heading",raw:L(t[0],`
-`),depth:t[2].charAt(0)==="="?1:2,text:n,tokens:this.lexer.inline(n)}}}paragraph(e){let t=this.rules.block.paragraph.exec(e);if(t){let n=t[1].charAt(t[1].length-1)===`
-`?t[1].slice(0,-1):t[1];return{type:"paragraph",raw:t[0],text:n,tokens:this.lexer.inline(n)}}}text(e){let t=this.rules.block.text.exec(e);if(t)return{type:"text",raw:t[0],text:t[0],tokens:this.lexer.inline(t[0])}}escape(e){let t=this.rules.inline.escape.exec(e);if(t)return{type:"escape",raw:t[0],text:t[1]}}tag(e){let t=this.rules.inline.tag.exec(e);if(t)return!this.lexer.state.inLink&&this.rules.other.startATag.test(t[0])?this.lexer.state.inLink=!0:this.lexer.state.inLink&&this.rules.other.endATag.test(t[0])&&(this.lexer.state.inLink=!1),!this.lexer.state.inRawBlock&&this.rules.other.startPreScriptTag.test(t[0])?this.lexer.state.inRawBlock=!0:this.lexer.state.inRawBlock&&this.rules.other.endPreScriptTag.test(t[0])&&(this.lexer.state.inRawBlock=!1),{type:"html",raw:t[0],inLink:this.lexer.state.inLink,inRawBlock:this.lexer.state.inRawBlock,block:!1,text:t[0]}}link(e){let t=this.rules.inline.link.exec(e);if(t){let n=t[2].trim();if(!this.options.pedantic&&this.rules.other.startAngleBracket.test(n)){if(!this.rules.other.endAngleBracket.test(n))return;let o=L(n.slice(0,-1),"\\");if((n.length-o.length)%2===0)return}else{let o=me(t[2],"()");if(o===-2)return;if(o>-1){let u=(t[0].indexOf("!")===0?5:4)+t[1].length+o;t[2]=t[2].substring(0,o),t[0]=t[0].substring(0,u).trim(),t[3]=""}}let s=t[2],r="";if(this.options.pedantic){let o=this.rules.other.pedanticHrefTitle.exec(s);o&&(s=o[1],r=o[3])}else r=t[3]?t[3].slice(1,-1):"";return s=s.trim(),this.rules.other.startAngleBracket.test(s)&&(this.options.pedantic&&!this.rules.other.endAngleBracket.test(n)?s=s.slice(1):s=s.slice(1,-1)),be(t,{href:s&&s.replace(this.rules.inline.anyPunctuation,"$1"),title:r&&r.replace(this.rules.inline.anyPunctuation,"$1")},t[0],this.lexer,this.rules)}}reflink(e,t){let n;if((n=this.rules.inline.reflink.exec(e))||(n=this.rules.inline.nolink.exec(e))){let s=(n[2]||n[1]).replace(this.rules.other.multipleSpaceGlobal," "),r=t[s.toLowerCase()];if(!r){let o=n[0].charAt(0);return{type:"text",raw:o,text:o}}return be(n,r,n[0],this.lexer,this.rules)}}emStrong(e,t,n=""){let s=this.rules.inline.emStrongLDelim.exec(e);if(!s||!s[1]&&!s[2]&&!s[3]&&!s[4]||s[4]&&n.match(this.rules.other.unicodeAlphaNumeric))return;if(!(s[1]||s[3]||"")||!n||this.rules.inline.punctuation.exec(n)){let o=[...s[0]].length-1,i,u,a=o,p=0,c=s[0][0],h=n===c,d=c==="*"?this.rules.inline.emStrongRDelimAst:this.rules.inline.emStrongRDelimUnd;for(d.lastIndex=0,t=t.slice(-1*e.length+o);(s=d.exec(t))!==null;){if(i=s[1]||s[2]||s[3]||s[4]||s[5]||s[6],!i)continue;if(u=[...i].length,s[3]||s[4]){a+=u;continue}else if(s[5]||s[6]){if(o%3&&!((o+u)%3)){p+=u;continue}if(h)break}if(a-=u,a>0)continue;u=Math.min(u,u+a+p);let O=[...s[0]][0].length,f=e.slice(0,o+s.index+O+u);if(Math.min(o,u)%2){let z=f.slice(1,-1);return{type:"em",raw:f,text:z,tokens:this.lexer.inlineTokens(z)}}let S=f.slice(2,-2);return{type:"strong",raw:f,text:S,tokens:this.lexer.inlineTokens(S)}}}}codespan(e){let t=this.rules.inline.code.exec(e);if(t){let n=t[2].replace(this.rules.other.newLineCharGlobal," "),s=this.rules.other.nonSpaceChar.test(n),r=this.rules.other.startingSpaceChar.test(n)&&this.rules.other.endingSpaceChar.test(n);return s&&r&&(n=n.substring(1,n.length-1)),{type:"codespan",raw:t[0],text:n}}}br(e){let t=this.rules.inline.br.exec(e);if(t)return{type:"br",raw:t[0]}}del(e,t,n=""){let s=this.rules.inline.delLDelim.exec(e);if(!s)return;if(!(s[1]||"")||!n||this.rules.inline.punctuation.exec(n)){let o=[...s[0]].length-1,i,u,a=o,p=this.rules.inline.delRDelim;for(p.lastIndex=0,t=t.slice(-1*e.length+o);(s=p.exec(t))!==null;){if(i=s[1]||s[2]||s[3]||s[4]||s[5]||s[6],!i||(u=[...i].length,u!==o))continue;if(s[3]||s[4]){a+=u;continue}if(a-=u,a>0)continue;u=Math.min(u,u+a);let c=[...s[0]][0].length,h=e.slice(0,o+s.index+c+u),d=h.slice(o,-o);return{type:"del",raw:h,text:d,tokens:this.lexer.inlineTokens(d)}}}}autolink(e){let t=this.rules.inline.autolink.exec(e);if(t){let n,s;return t[2]==="@"?(n=t[1],s="mailto:"+n):(n=t[1],s=n),{type:"link",raw:t[0],text:n,href:s,autolink:!0,tokens:[{type:"text",raw:n,text:n}]}}}url(e){let t;if(t=this.rules.inline.url.exec(e)){let n,s;if(t[2]==="@")n=t[0],s="mailto:"+n;else{let r;do r=t[0],t[0]=this.rules.inline._backpedal.exec(t[0])?.[0]??"";while(r!==t[0]);n=t[0],t[1]==="www."?s="http://"+t[0]:s=t[0]}return{type:"link",raw:t[0],text:n,href:s,autolink:!0,tokens:[{type:"text",raw:n,text:n}]}}}inlineText(e){let t=this.rules.inline.text.exec(e);if(t){let n=this.lexer.state.inRawBlock;return{type:"text",raw:t[0],text:t[0],escaped:n}}}};var x=class l{tokens;options;state;inlineQueue;tokenizer;constructor(e){this.tokens=[],this.tokens.links=Object.create(null),this.options=e||R,this.options.tokenizer=this.options.tokenizer||new w,this.tokenizer=this.options.tokenizer,this.tokenizer.options=this.options,this.tokenizer.lexer=this,this.inlineQueue=[],this.state={inLink:!1,inRawBlock:!1,linkEmitted:!1,top:!0};let t={other:m,block:Z.normal,inline:B.normal};this.options.pedantic?(t.block=Z.pedantic,t.inline=B.pedantic):this.options.gfm&&(t.block=Z.gfm,this.options.breaks?t.inline=B.breaks:t.inline=B.gfm),this.tokenizer.rules=t}static get rules(){return{block:Z,inline:B}}static lex(e,t){return new l(t).lex(e)}static lexInline(e,t){return new l(t).inlineTokens(e)}lex(e){e=e.replace(m.carriageReturn,`
-`),this.blockTokens(e,this.tokens);for(let t=0;t<this.inlineQueue.length;t++){let n=this.inlineQueue[t];this.inlineTokens(n.src,n.tokens)}return this.inlineQueue=[],this.tokens}blockTokens(e,t=[],n=!1){this.tokenizer.lexer=this,this.options.pedantic&&(e=e.replace(m.tabCharGlobal,"    ").replace(m.spaceLine,""));let s=1/0;for(;e;){if(e.length<s)s=e.length;else{this.infiniteLoopError(e.charCodeAt(0));break}let r;if(this.options.extensions?.block?.some(i=>(r=i.call({lexer:this},e,t))?(e=e.substring(r.raw.length),t.push(r),!0):!1))continue;if(r=this.tokenizer.space(e)){e=e.substring(r.raw.length);let i=t.at(-1);r.raw.length===1&&i!==void 0?i.raw+=`
-`:t.push(r);continue}if(r=this.tokenizer.code(e)){e=e.substring(r.raw.length);let i=t.at(-1);i?.type==="paragraph"||i?.type==="text"?(i.raw+=(i.raw.endsWith(`
-`)?"":`
-`)+r.raw,i.text+=`
-`+r.text,this.inlineQueue.at(-1).src=i.text):t.push(r);continue}if(r=this.tokenizer.fences(e)){e=e.substring(r.raw.length),t.push(r);continue}if(r=this.tokenizer.heading(e)){e=e.substring(r.raw.length),t.push(r);continue}if(r=this.tokenizer.hr(e)){e=e.substring(r.raw.length),t.push(r);continue}if(r=this.tokenizer.blockquote(e)){e=e.substring(r.raw.length),t.push(r);continue}if(r=this.tokenizer.list(e)){e=e.substring(r.raw.length),t.push(r);continue}if(r=this.tokenizer.html(e)){e=e.substring(r.raw.length),t.push(r);continue}if(r=this.tokenizer.def(e)){e=e.substring(r.raw.length);let i=t.at(-1);i?.type==="paragraph"||i?.type==="text"?(i.raw+=(i.raw.endsWith(`
-`)?"":`
-`)+r.raw,i.text+=`
-`+r.raw,this.inlineQueue.at(-1).src=i.text):this.tokens.links[r.tag]||(this.tokens.links[r.tag]={href:r.href,title:r.title},t.push(r));continue}if(r=this.tokenizer.table(e)){e=e.substring(r.raw.length),t.push(r);continue}if(r=this.tokenizer.lheading(e)){e=e.substring(r.raw.length),t.push(r);continue}let o=e;if(this.options.extensions?.startBlock){let i=1/0,u=e.slice(1),a;this.options.extensions.startBlock.forEach(p=>{a=p.call({lexer:this},u),typeof a=="number"&&a>=0&&(i=Math.min(i,a))}),i<1/0&&i>=0&&(o=e.substring(0,i+1))}if(this.state.top&&(r=this.tokenizer.paragraph(o))){let i=t.at(-1);n&&i?.type==="paragraph"?(i.raw+=(i.raw.endsWith(`
-`)?"":`
-`)+r.raw,i.text+=`
-`+r.text,this.inlineQueue.pop(),this.inlineQueue.at(-1).src=i.text):t.push(r),n=o.length!==e.length,e=e.substring(r.raw.length);continue}if(r=this.tokenizer.text(e)){e=e.substring(r.raw.length);let i=t.at(-1);i?.type==="text"?(i.raw+=(i.raw.endsWith(`
-`)?"":`
-`)+r.raw,i.text+=`
-`+r.text,this.inlineQueue.pop(),this.inlineQueue.at(-1).src=i.text):t.push(r);continue}if(e){this.infiniteLoopError(e.charCodeAt(0));break}}return this.state.top=!0,t}inline(e,t=[]){return this.inlineQueue.push({src:e,tokens:t}),t}linkInText(e){if(!e.includes("["))return!1;let t=this.tokenizer.rules.inline.link;for(let n of e.matchAll(this.tokenizer.rules.inline.blockSkip))if(t.test(n[0])&&e.charAt(n.index-1)!=="!")return!0;for(let n of e.matchAll(this.tokenizer.rules.inline.reflinkSearch)){let s=n[0],r=s.lastIndexOf("[");if(!(s.charAt(0)==="!"||!Object.hasOwn(this.tokens.links,s.slice(r+1,-1)))&&!(r>1&&this.linkInText(s.slice(1,r-1))))return!0}return!1}inlineTokens(e,t=[]){this.tokenizer.lexer=this;let n=e;if(this.tokens.links&&e.includes("[")){let i=this.tokenizer.rules.inline.reflinkSearch,u=a=>{let p=a.lastIndexOf("[");if(!Object.hasOwn(this.tokens.links,a.slice(p+1,-1)))return a;if(p>1&&a.charAt(0)!=="!"){let c=a.slice(1,p-1);if(this.linkInText(c))return"["+c.replace(i,u)+"]["+"a".repeat(a.length-p-2)+"]"}return"["+"a".repeat(a.length-2)+"]"};n=n.replace(i,u)}n=n.replace(this.tokenizer.rules.inline.anyPunctuation,i=>"+".repeat(i.length)),n=n.replace(this.tokenizer.rules.inline.blockSkip,(i,u,a)=>{let p=a?a.length:0;return i.slice(0,p)+"["+"a".repeat(i.length-p-2)+"]"}),n=this.options.hooks?.emStrongMask?.call({lexer:this},n)??n;let s=!1,r="",o=1/0;for(;e;){if(e.length<o)o=e.length;else{this.infiniteLoopError(e.charCodeAt(0));break}s||(r=""),s=!1;let i;if(this.options.extensions?.inline?.some(a=>(i=a.call({lexer:this},e,t))?(e=e.substring(i.raw.length),t.push(i),!0):!1))continue;if(i=this.tokenizer.escape(e)){e=e.substring(i.raw.length),t.push(i);continue}if(i=this.tokenizer.tag(e)){e=e.substring(i.raw.length),t.push(i);continue}if(i=this.tokenizer.link(e)){e=e.substring(i.raw.length),t.push(i);continue}if(i=this.tokenizer.reflink(e,this.tokens.links)){e=e.substring(i.raw.length);let a=t.at(-1);i.type==="text"&&a?.type==="text"?(a.raw+=i.raw,a.text+=i.text):t.push(i);continue}if(i=this.tokenizer.emStrong(e,n,r)){e=e.substring(i.raw.length),t.push(i);continue}if(i=this.tokenizer.codespan(e)){e=e.substring(i.raw.length),t.push(i);continue}if(i=this.tokenizer.br(e)){e=e.substring(i.raw.length),t.push(i);continue}if(i=this.tokenizer.del(e,n,r)){e=e.substring(i.raw.length),t.push(i);continue}if(i=this.tokenizer.autolink(e)){e=e.substring(i.raw.length),t.push(i);continue}if(!this.state.inLink&&(i=this.tokenizer.url(e))){e=e.substring(i.raw.length),t.push(i);continue}let u=e;if(this.options.extensions?.startInline){let a=1/0,p=e.slice(1),c;this.options.extensions.startInline.forEach(h=>{c=h.call({lexer:this},p),typeof c=="number"&&c>=0&&(a=Math.min(a,c))}),a<1/0&&a>=0&&(u=e.substring(0,a+1))}if(i=this.tokenizer.inlineText(u)){e=e.substring(i.raw.length),i.raw.slice(-1)!=="_"&&(r=i.raw.slice(-1)),s=!0;let a=t.at(-1);a?.type==="text"?(a.raw+=i.raw,a.text+=i.text):t.push(i);continue}if(e){this.infiniteLoopError(e.charCodeAt(0));break}}return t}infiniteLoopError(e){let t="Infinite loop on byte: "+e;if(this.options.silent)console.error(t);else throw new Error(t)}};var y=class{options;parser;constructor(e){this.options=e||R}space(e){return""}code({text:e,lang:t,escaped:n}){let s=(t||"").match(m.notSpaceStart)?.[0],r=e?e.replace(m.endingNewline,"")+`
-`:"";return s?'<pre><code class="language-'+T(s)+'">'+(n?r:T(r,!0))+`</code></pre>
-`:"<pre><code>"+(n?r:T(r,!0))+`</code></pre>
-`}blockquote({tokens:e}){return`<blockquote>
-${this.parser.parse(e)}</blockquote>
-`}html({text:e}){return e}def(e){return""}heading({tokens:e,depth:t}){return`<h${t}>${this.parser.parseInline(e)}</h${t}>
-`}hr(e){return`<hr>
-`}list(e){let t=e.ordered,n=e.start,s="";for(let i=0;i<e.items.length;i++){let u=e.items[i];s+=this.listitem(u)}let r=t?"ol":"ul",o=t&&n!==1?' start="'+n+'"':"";return"<"+r+o+`>
-`+s+"</"+r+`>
-`}listitem(e){return`<li>${this.parser.parse(e.tokens)}</li>
-`}checkbox({checked:e}){return"<input "+(e?'checked="" ':"")+'disabled="" type="checkbox"> '}paragraph({tokens:e}){return`<p>${this.parser.parseInline(e)}</p>
-`}table(e){let t="",n="";for(let r=0;r<e.header.length;r++)n+=this.tablecell(e.header[r]);t+=this.tablerow({text:n});let s="";for(let r=0;r<e.rows.length;r++){let o=e.rows[r];n="";for(let i=0;i<o.length;i++)n+=this.tablecell(o[i]);s+=this.tablerow({text:n})}return s&&(s=`<tbody>${s}</tbody>`),`<table>
-<thead>
-`+t+`</thead>
-`+s+`</table>
-`}tablerow({text:e}){return`<tr>
-${e}</tr>
-`}tablecell(e){let t=this.parser.parseInline(e.tokens),n=e.header?"th":"td";return(e.align?`<${n} align="${e.align}">`:`<${n}>`)+t+`</${n}>
-`}strong({tokens:e}){return`<strong>${this.parser.parseInline(e)}</strong>`}em({tokens:e}){return`<em>${this.parser.parseInline(e)}</em>`}codespan({text:e}){return`<code>${T(e,!0)}</code>`}br(e){return"<br>"}del({tokens:e}){return`<del>${this.parser.parseInline(e)}</del>`}link({href:e,title:t,text:n,tokens:s,autolink:r}){let o=r?T(n,!0):this.parser.parseInline(s),i=ee(e);if(i===null)return o;e=T(i,r);let u='<a href="'+e+'"';return t&&(u+=' title="'+T(t)+'"'),u+=">"+o+"</a>",u}image({href:e,title:t,text:n,tokens:s}){s&&(n=this.parser.parseInline(s,this.parser.textRenderer));let r=ee(e);if(r===null)return T(n);e=r;let o=`<img src="${T(e)}" alt="${T(n)}"`;return t&&(o+=` title="${T(t)}"`),o+=">",o}text(e){return"tokens"in e&&e.tokens?this.parser.parseInline(e.tokens):"escaped"in e&&e.escaped?e.text:T(e.text)}};var _=class{strong({text:e}){return e}em({text:e}){return e}codespan({text:e}){return e}del({text:e}){return e}html({text:e}){return e}text({text:e}){return e}link({text:e}){return""+e}image({text:e}){return""+e}br(){return""}checkbox({raw:e}){return e}};var b=class l{options;renderer;textRenderer;constructor(e){this.options=e||R,this.options.renderer=this.options.renderer||new y,this.renderer=this.options.renderer,this.renderer.options=this.options,this.renderer.parser=this,this.textRenderer=new _}static parse(e,t){return new l(t).parse(e)}static parseInline(e,t){return new l(t).parseInline(e)}parse(e){this.renderer.parser=this;let t="";for(let n=0;n<e.length;n++){let s=e[n];if(this.options.extensions?.renderers?.[s.type]){let o=s,i=this.options.extensions.renderers[o.type].call({parser:this},o);if(i!==!1||!["space","hr","heading","code","table","blockquote","list","checkbox","html","def","paragraph","text"].includes(o.type)){t+=i||"";continue}}let r=s;switch(r.type){case"space":{t+=this.renderer.space(r);break}case"hr":{t+=this.renderer.hr(r);break}case"heading":{t+=this.renderer.heading(r);break}case"code":{t+=this.renderer.code(r);break}case"table":{t+=this.renderer.table(r);break}case"blockquote":{t+=this.renderer.blockquote(r);break}case"list":{t+=this.renderer.list(r);break}case"checkbox":{t+=this.renderer.checkbox(r);break}case"html":{t+=this.renderer.html(r);break}case"def":{t+=this.renderer.def(r);break}case"paragraph":{t+=this.renderer.paragraph(r);break}case"text":{t+=this.renderer.text(r);break}default:{let o='Token with "'+r.type+'" type was not found.';if(this.options.silent)return console.error(o),"";throw new Error(o)}}}return t}parseInline(e,t=this.renderer){this.renderer.parser=this;let n="";for(let s=0;s<e.length;s++){let r=e[s];if(this.options.extensions?.renderers?.[r.type]){let i=this.options.extensions.renderers[r.type].call({parser:this},r);if(i!==!1||!["escape","html","link","image","checkbox","strong","em","codespan","br","del","text"].includes(r.type)){n+=i||"";continue}}let o=r;switch(o.type){case"escape":{n+=t.text(o);break}case"html":{n+=t.html(o);break}case"link":{n+=t.link(o);break}case"image":{n+=t.image(o);break}case"checkbox":{n+=t.checkbox(o);break}case"strong":{n+=t.strong(o);break}case"em":{n+=t.em(o);break}case"codespan":{n+=t.codespan(o);break}case"br":{n+=t.br(o);break}case"del":{n+=t.del(o);break}case"text":{n+=t.text(o);break}default:{let i='Token with "'+o.type+'" type was not found.';if(this.options.silent)return console.error(i),"";throw new Error(i)}}}return n}};var P=class{options;block;constructor(e){this.options=e||R}static passThroughHooks=new Set(["preprocess","postprocess","processAllTokens","emStrongMask"]);static passThroughHooksRespectAsync=new Set(["preprocess","postprocess","processAllTokens"]);preprocess(e){return e}postprocess(e){return e}processAllTokens(e){return e}emStrongMask(e){return e}provideLexer(e=this.block){return e?x.lex:x.lexInline}provideParser(e=this.block){return e?b.parse:b.parseInline}};var D=class{defaults=E();options=this.setOptions;parse=this.parseMarkdown(!0);parseInline=this.parseMarkdown(!1);Parser=b;Renderer=y;TextRenderer=_;Lexer=x;Tokenizer=w;Hooks=P;constructor(...e){this.use(...e)}walkTokens(e,t){let n=[];for(let s of e)switch(n=n.concat(t.call(this,s)),s.type){case"table":{let r=s;for(let o of r.header)n=n.concat(this.walkTokens(o.tokens,t));for(let o of r.rows)for(let i of o)n=n.concat(this.walkTokens(i.tokens,t));break}case"list":{let r=s;n=n.concat(this.walkTokens(r.items,t));break}default:{let r=s;this.defaults.extensions?.childTokens?.[r.type]?this.defaults.extensions.childTokens[r.type].forEach(o=>{let i=r[o].flat(1/0);n=n.concat(this.walkTokens(i,t))}):r.tokens&&(n=n.concat(this.walkTokens(r.tokens,t)))}}return n}use(...e){let t=this.defaults.extensions||{renderers:{},childTokens:{}};return e.forEach(n=>{let s={...n};if(s.async=this.defaults.async||s.async||!1,n.extensions&&(n.extensions.forEach(r=>{if(!r.name)throw new Error("extension name required");if("renderer"in r){let o=t.renderers[r.name];o?t.renderers[r.name]=function(...i){let u=r.renderer.apply(this,i);return u===!1&&(u=o.apply(this,i)),u}:t.renderers[r.name]=r.renderer}if("tokenizer"in r){if(!r.level||r.level!=="block"&&r.level!=="inline")throw new Error("extension level must be 'block' or 'inline'");let o=t[r.level];o?o.unshift(r.tokenizer):t[r.level]=[r.tokenizer],r.start&&(r.level==="block"?t.startBlock?t.startBlock.push(r.start):t.startBlock=[r.start]:r.level==="inline"&&(t.startInline?t.startInline.push(r.start):t.startInline=[r.start]))}"childTokens"in r&&r.childTokens&&(t.childTokens[r.name]=r.childTokens)}),s.extensions=t),n.renderer){let r=this.defaults.renderer||new y(this.defaults);for(let o in n.renderer){if(!(o in r))throw new Error(`renderer '${o}' does not exist`);if(["options","parser"].includes(o))continue;let i=o,u=n.renderer[i],a=r[i];r[i]=(...p)=>{let c=u.apply(r,p);return c===!1&&(c=a.apply(r,p)),c||""}}s.renderer=r}if(n.tokenizer){let r=this.defaults.tokenizer||new w(this.defaults);for(let o in n.tokenizer){if(!(o in r))throw new Error(`tokenizer '${o}' does not exist`);if(["options","rules","lexer"].includes(o))continue;let i=o,u=n.tokenizer[i],a=r[i];r[i]=(...p)=>{let c=u.apply(r,p);return c===!1&&(c=a.apply(r,p)),c}}s.tokenizer=r}if(n.hooks){let r=this.defaults.hooks||new P;for(let o in n.hooks){if(!(o in r))throw new Error(`hook '${o}' does not exist`);if(["options","block"].includes(o))continue;let i=o,u=n.hooks[i],a=r[i];P.passThroughHooks.has(o)?r[i]=p=>{if(this.defaults.async&&P.passThroughHooksRespectAsync.has(o))return(async()=>{let h=await u.call(r,p);return a.call(r,h)})();let c=u.call(r,p);return a.call(r,c)}:r[i]=(...p)=>{if(this.defaults.async)return(async()=>{let h=await u.apply(r,p);return h===!1&&(h=await a.apply(r,p)),h})();let c=u.apply(r,p);return c===!1&&(c=a.apply(r,p)),c}}s.hooks=r}if(n.walkTokens){let r=this.defaults.walkTokens,o=n.walkTokens;s.walkTokens=function(i){let u=[];return u.push(o.call(this,i)),r&&(u=u.concat(r.call(this,i))),u}}this.defaults={...this.defaults,...s}}),this}setOptions(e){return this.defaults={...this.defaults,...e},this}lexer(e,t){return x.lex(e,t??this.defaults)}parser(e,t){return b.parse(e,t??this.defaults)}parseMarkdown(e){return(n,s)=>{let r={...s},o={...this.defaults,...r},i=this.onError(!!o.silent,!!o.async);if(this.defaults.async===!0&&r.async===!1)return i(new Error("marked(): The async option was set to true by an extension. Remove async: false from the parse options object to return a Promise."));if(typeof n>"u"||n===null)return i(new Error("marked(): input parameter is undefined or null"));if(typeof n!="string")return i(new Error("marked(): input parameter is of type "+Object.prototype.toString.call(n)+", string expected"));if(o.hooks&&(o.hooks.options=o,o.hooks.block=e),o.async)return(async()=>{let u=o.hooks?await o.hooks.preprocess(n):n,p=await(o.hooks?await o.hooks.provideLexer(e):e?x.lex:x.lexInline)(u,o),c=o.hooks?await o.hooks.processAllTokens(p):p;o.walkTokens&&await Promise.all(this.walkTokens(c,o.walkTokens));let d=await(o.hooks?await o.hooks.provideParser(e):e?b.parse:b.parseInline)(c,o);return o.hooks?await o.hooks.postprocess(d):d})().catch(i);try{o.hooks&&(n=o.hooks.preprocess(n));let a=(o.hooks?o.hooks.provideLexer(e):e?x.lex:x.lexInline)(n,o);o.hooks&&(a=o.hooks.processAllTokens(a)),o.walkTokens&&this.walkTokens(a,o.walkTokens);let c=(o.hooks?o.hooks.provideParser(e):e?b.parse:b.parseInline)(a,o);return o.hooks&&(c=o.hooks.postprocess(c)),c}catch(u){return i(u)}}}onError(e,t){return n=>{if(n.message+=`
-Please report this to https://github.com/markedjs/marked.`,e){let s="<p>An error occurred:</p><pre>"+T(n.message+"",!0)+"</pre>";return t?Promise.resolve(s):s}if(t)return Promise.reject(n);throw n}}};var A=new D;function g(l,e){return A.parse(l,e)}g.options=g.setOptions=function(l){return A.setOptions(l),g.defaults=A.defaults,F(g.defaults),g};g.getDefaults=E;g.defaults=R;function Re(...l){return A.use(...l),g.defaults=A.defaults,F(g.defaults),g}g.use=Re;g.walkTokens=function(l,e){return A.walkTokens(l,e)};g.parseInline=A.parseInline;g.Parser=b;g.parser=b.parse;g.Renderer=y;g.TextRenderer=_;g.Lexer=x;g.lexer=x.lex;g.Tokenizer=w;g.Hooks=P;g.parse=g;var wt=g.options,yt=g.setOptions,Pt=g.walkTokens,St=g.parseInline,_t=g,$t=b.parse,Lt=x.lex;
+<br/>
 
-if(__exports != exports)module.exports = exports;return module.exports}));
-//# sourceMappingURL=marked.umd.js.map
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1200&color=E07628&center=true&vCenter=true&width=800&height=50&lines=🏗️+Full-Stack+%26+Mobile+Engineer+%7C+3%2B+Years+Shipping+Production+Software;💻+Available+for+Freelance+and+Contract+Work;⚡+Real-Time+Systems+%7C+RAHA+Ride+and+Niku+Mobility;🚀+Creator+of+NyalaJS+%7C+Open+Source+on+npm" />
 
-</script>
-<script>
-  var README_B64 = "PGRpdiBhbGlnbj0iY2VudGVyIj4KCjxpbWcgc3JjPSJodHRwczovL2NhcHN1bGUtcmVuZGVyLnZlcmNlbC5hcHAvYXBpP3R5cGU9d2F2aW5nJmNvbG9yPTA6MEQ1ODU4LDUwOjFBNzA3MCwxMDA6RTA3NjI4JmhlaWdodD0yMjAmc2VjdGlvbj1oZWFkZXImdGV4dD1IYWlsZW1hcml5YW0lMjBLZWJlZGUmZm9udFNpemU9NDYmZm9udENvbG9yPWZmZmZmZiZhbmltYXRpb249ZmFkZUluJmZvbnRBbGlnblk9MzgmZGVzYz1GcmVlbGFuY2UlMjBGdWxsLVN0YWNrJTIwU29mdHdhcmUlMjBFbmdpbmVlciUyMCU3QyUyME1vYmlsZSUyMGFuZCUyMFdlYiUyMERldmVsb3BlciZkZXNjU2l6ZT0xNiZkZXNjQWxpZ25ZPTU4JmRlc2NDb2xvcj1GMkQ1QjgiIC8+Cgo8YnIvPgoKPGltZyBzcmM9Imh0dHBzOi8vcmVhZG1lLXR5cGluZy1zdmcuZGVtb2xhYi5jb20/Zm9udD1KZXRCcmFpbnMrTW9ubyZ3ZWlnaHQ9NjAwJnNpemU9MTgmcGF1c2U9MTIwMCZjb2xvcj1FMDc2MjgmY2VudGVyPXRydWUmdkNlbnRlcj10cnVlJndpZHRoPTgwMCZoZWlnaHQ9NTAmbGluZXM98J+Pl++4jytGdWxsLVN0YWNrKyUyNitNb2JpbGUrRW5naW5lZXIrJTdDKzMlMkIrWWVhcnMrU2hpcHBpbmcrUHJvZHVjdGlvbitTb2Z0d2FyZTvwn5K7K0F2YWlsYWJsZStmb3IrRnJlZWxhbmNlK2FuZCtDb250cmFjdCtXb3JrO+KaoStSZWFsLVRpbWUrU3lzdGVtcyslN0MrUkFIQStSaWRlK2FuZCtOaWt1K01vYmlsaXR5O/CfmoArQ3JlYXRvcitvZitOeWFsYUpTKyU3QytPcGVuK1NvdXJjZStvbitucG0iIC8+Cgo8YnIvPgoKWyFbU3RhdHVzXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL/Cfn6JfQXZhaWxhYmxlX2Zvcl9GcmVlbGFuY2VfV29yay0xQTcwNzA/c3R5bGU9Zm9yLXRoZS1iYWRnZSldKG1haWx0bzpoYWlsZW1hcml5YW0zMjk4QGdtYWlsLmNvbSkKCjxici8+PGJyLz4KClshW1BvcnRmb2xpb10oaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS/wn4yQX1BvcnRmb2xpby1oYWlsZW1hcml5YW0udGVjaC0xQTcwNzA/c3R5bGU9Zm9yLXRoZS1iYWRnZSldKGh0dHBzOi8vaGFpbGVtYXJpeWFtLnRlY2gpClshW0dtYWlsXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL0dtYWlsLUUwNzYyOD9zdHlsZT1mb3ItdGhlLWJhZGdlJmxvZ289Z21haWwmbG9nb0NvbG9yPXdoaXRlKV0obWFpbHRvOmhhaWxlbWFyaXlhbTMyOThAZ21haWwuY29tKQpbIVtMaW5rZWRJbl0oaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS9MaW5rZWRJbi0wRDU4NTg/c3R5bGU9Zm9yLXRoZS1iYWRnZSZsb2dvPWxpbmtlZGluJmxvZ29Db2xvcj13aGl0ZSldKGh0dHBzOi8vbGlua2VkaW4uY29tL2luL2hhaWxlbWFyaXlhbS1rZWJlZGUtMWI2MDY2Mjk2KQpbIVtYXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL1hfKFR3aXR0ZXIpLUUwNzYyOD9zdHlsZT1mb3ItdGhlLWJhZGdlJmxvZ289eCZsb2dvQ29sb3I9d2hpdGUpXShodHRwczovL3guY29tL0hhaWxlbWFyaXkzNTYpClshW1ZpZXdzXShodHRwczovL2tvbWFyZXYuY29tL2docHZjLz91c2VybmFtZT1IYWlsZW1hcml5YW0mY29sb3I9RTA3NjI4JnN0eWxlPWZvci10aGUtYmFkZ2UmbGFiZWw9UFJPRklMRStWSUVXUyldKGh0dHBzOi8vZ2l0aHViLmNvbS9IYWlsZW1hcml5YW0pCgrwn5ONIEFkZGlzIEFiYWJhLCBFdGhpb3BpYQoKPC9kaXY+CgotLS0KCjxkaXYgYWxpZ249ImNlbnRlciI+CgpbYHsgYWJvdXQgfWBdKCNhYm91dCkgwrcgW2B7IGV4cGVyaWVuY2UgfWBdKCNleHBlcmllbmNlKSDCtyBbYHsgdGVjaCB9YF0oI3RlY2gpIMK3IFtgeyBwcm9qZWN0cyB9YF0oI3Byb2plY3RzKSDCtyBbYHsgb3BlbiBzb3VyY2UgfWBdKCNvcGVuLXNvdXJjZSkgwrcgW2B7IHN0YXRzIH1gXSgjc3RhdHMpIMK3IFtgeyBoaXJlIG1lIH1gXSgjaGlyZS1tZSkKCjwvZGl2PgoKLS0tCgo8YSBpZD0iYWJvdXQiPjwvYT4KPGRpdiBhbGlnbj0iY2VudGVyIj4KCiMjIGB7IGFib3V0OiBtZSB9YAoKPC9kaXY+CgpgYGB0eXBlc2NyaXB0CmNvbnN0IGhhaWxlbWFyaXlhbSA9IHsKICByb2xlICAgICAgIDogIkZyZWVsYW5jZSBGdWxsLVN0YWNrIFNvZnR3YXJlIEVuZ2luZWVyIMK3IE1vYmlsZSBBcHBsaWNhdGlvbiBEZXZlbG9wZXIiLAogIGxvY2F0aW9uICAgOiAiQWRkaXMgQWJhYmEsIEV0aGlvcGlhIPCfh6rwn4e5IiwKICBleHBlcmllbmNlIDogIjMrIHllYXJzIiwKICBzdGF0dXMgICAgIDogIvCfn6IgQXZhaWxhYmxlIGZvciBmcmVlbGFuY2UgYW5kIGNvbnRyYWN0IHdvcmsiLAogIHByZXZpb3VzbHkgOiBbIkZ1bGwtU3RhY2sgU29mdHdhcmUgRW5naW5lZXIgQCBUcnVzdCBUZWNobm9sb2dpZXMgKDIwMjYpIiwKICAgICAgICAgICAgICAgICJGdWxsLVN0YWNrIEVuZ2luZWVyIEAgRGVnYW4gVGVjaG5vbG9naWVzICgyMDI04oCTMjAyNikiXSwKICBzdGFjayAgICAgIDogWyJUeXBlU2NyaXB0IiwgIkphdmFTY3JpcHQiLCAiTm9kZS5qcyIsICJFeHByZXNzLmpzIiwgIkxhcmF2ZWwiLAogICAgICAgICAgICAgICAgIlJlYWN0IiwgIk5leHQuanMiLCAiVnVlLmpzIiwgIkZsdXR0ZXIiLCAiUHl0aG9uIl0sCiAgc2hpcHBlZCAgICA6IFsiUkFIQSBSaWRlIOKAlCByZWFsLXRpbWUgcmlkZS1oYWlsaW5nIHBsYXRmb3JtIiwKICAgICAgICAgICAgICAgICJOaWt1IE1vYmlsaXR5IOKAlCByZWFsLXRpbWUgc21hcnQgcGFya2luZyBhcHAgKHBlcnNvbmFsIHByb2plY3QpIiwKICAgICAgICAgICAgICAgICJNQUhERVIg4oCUIG9mZmxpbmUtZmlyc3QgZGlnaXRhbCBhcmNoaXZlIHBsYXRmb3JtIiwKICAgICAgICAgICAgICAgICJOeWFsYUpTIOKAlCBlbnRlcnByaXNlIFR5cGVTY3JpcHQgZnJhbWV3b3JrLCAxNSsgcGFja2FnZXMgKGNyZWF0b3IpIl0sCiAgcXVvdGUgICAgICA6ICJJIGJ1aWxkIHN5c3RlbXMgdGhhdCBzY2FsZSwgbm90IGp1c3QgYXBwbGljYXRpb25zIHRoYXQgcnVuLiIsCn07CmBgYAoKLS0tCgo8YSBpZD0iZXhwZXJpZW5jZSI+PC9hPgo8ZGl2IGFsaWduPSJjZW50ZXIiPgoKIyMg8J+SvCBFeHBlcmllbmNlCgo8L2Rpdj4KCj4gKirwn5+iIEZyZWVsYW5jZSBGdWxsLVN0YWNrICYgTW9iaWxlIERldmVsb3BlcioqIOKAlCBBZGRpcyBBYmFiYSwgRXRoaW9waWEgwrcgKkN1cnJlbnRseSoKPiBUYWtpbmcgb24gZnVsbC1zdGFjayB3ZWIgYW5kIG1vYmlsZSBwcm9qZWN0cyDigJQgZnJvbSBhcmNoaXRlY3R1cmUgdGhyb3VnaCBkZXBsb3ltZW50LiBPcGVuIHRvIHJlbW90ZSwgY29udHJhY3QsIGFuZCBzaG9ydC10ZXJtIGVuZ2FnZW1lbnRzLiBbR2V0IGluIHRvdWNoIOKGkl0obWFpbHRvOmhhaWxlbWFyaXlhbTMyOThAZ21haWwuY29tKQoKPHRhYmxlPgo8dHI+Cjx0ZCB3aWR0aD0iNTAlIiB2YWxpZ249InRvcCI+CgoqKlRydXN0IFRlY2hub2xvZ2llcyoqIOKAlCBBZGRpcyBBYmFiYSwgRXRoaW9waWEKKk1vYmlsZSBBcHBsaWNhdGlvbiBEZXZlbG9wZXIg4oaSIEZ1bGwtU3RhY2sgU29mdHdhcmUgRW5naW5lZXIqCmAyMDI2YAoKUHJvZ3Jlc3NlZCBmcm9tIGJ1aWxkaW5nIGNyb3NzLXBsYXRmb3JtIG1vYmlsZSBhcHBzIHdpdGggRmx1dHRlciBpbnRvIGZ1bGwtc3RhY2sgZGV2ZWxvcG1lbnQgYWNyb3NzIGZyb250ZW5kLCBiYWNrZW5kLCBBUEksIGFuZCBkYXRhYmFzZSBsYXllcnMuIEJ1aWx0ICoqUkFIQSBSaWRlKiosIGEgcmVhbC10aW1lIHJpZGUtaGFpbGluZyBwbGF0Zm9ybSwgaW5jbHVkaW5nIFJFU1QgQVBJcywgYXV0aCwgYW5kIHJlYWwtdGltZSBhcHBsaWNhdGlvbiBmdW5jdGlvbmFsaXR5LgoKPC90ZD4KPHRkIHdpZHRoPSI1MCUiIHZhbGlnbj0idG9wIj4KCioqRGVnYW4gVGVjaG5vbG9naWVzKiog4oCUIEFkZGlzIEFiYWJhLCBFdGhpb3BpYQoqRnVsbC1TdGFjayBFbmdpbmVlcioKYEphbiAyMDI0IOKAkyBGZWIgMjAyNmAKCkJ1aWx0IGFuZCBtYWludGFpbmVkIHByb2R1Y3Rpb24gd2ViIGFuZCBtb2JpbGUgcGxhdGZvcm1zIGFjcm9zcyBlLWxlYXJuaW5nLCBkaWdpdGFsIGxpYnJhcnksIGtub3dsZWRnZSBtYW5hZ2VtZW50LCBhbmQgc2Nob29sIG1hbmFnZW1lbnQgZG9tYWlucyDigJQgcm9sZS1iYXNlZCBkYXNoYm9hcmRzLCBSRVNUIEFQSXMsIGFuZCBkYXRhYmFzZS1kcml2ZW4gd29ya2Zsb3dzIHdpdGggTGFyYXZlbCwgVnVlLmpzLCBOZXh0LmpzLCBhbmQgVHlwZVNjcmlwdC4KCjwvdGQ+CjwvdHI+CjwvdGFibGU+CgotLS0KCjxhIGlkPSJ0ZWNoIj48L2E+CjxkaXYgYWxpZ249ImNlbnRlciI+CgojIyDwn5ug77iPIFRlY2ggQXJzZW5hbAoKIyMjIOKaoSBGcm9udGVuZAo8aW1nIHNyYz0iaHR0cHM6Ly9za2lsbGljb25zLmRldi9pY29ucz9pPXJlYWN0LG5leHRqcyx2dWUsdHlwZXNjcmlwdCxqYXZhc2NyaXB0LGh0bWwsY3NzJnRoZW1lPWRhcmsiIC8+CgojIyMg8J+UpSBCYWNrZW5kCjxpbWcgc3JjPSJodHRwczovL3NraWxsaWNvbnMuZGV2L2ljb25zP2k9bm9kZWpzLGV4cHJlc3MsbGFyYXZlbCxweXRob24mdGhlbWU9ZGFyayIgLz4KPGJyLz4KPGltZyBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvU29ja2V0LklPLTBENTg1OD9zdHlsZT1mbGF0LXNxdWFyZSZsb2dvPXNvY2tldC5pbyZsb2dvQ29sb3I9d2hpdGUiIC8+CgojIyMg8J+TsSBNb2JpbGUgJiBEYXRhCjxpbWcgc3JjPSJodHRwczovL3NraWxsaWNvbnMuZGV2L2ljb25zP2k9Zmx1dHRlcixkYXJ0LGZpcmViYXNlLHBvc3RncmVzLG15c3FsLHNxbGl0ZSxtb25nb2RiLHJlZGlzJnRoZW1lPWRhcmsiIC8+Cjxici8+CjxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL1NRTF9TZXJ2ZXItRTA3NjI4P3N0eWxlPWZsYXQtc3F1YXJlJmxvZ289bWljcm9zb2Z0c3Fsc2VydmVyJmxvZ29Db2xvcj13aGl0ZSIgLz4KCiMjIyDimIHvuI8gRGV2T3BzICYgQ2xvdWQKPGltZyBzcmM9Imh0dHBzOi8vc2tpbGxpY29ucy5kZXYvaWNvbnM/aT1kb2NrZXIsZ2l0LGxpbnV4JnRoZW1lPWRhcmsiIC8+Cjxici8+CjxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL0NJJTJGQ0QtMUE3MDcwP3N0eWxlPWZsYXQtc3F1YXJlJmxvZ289Z2l0aHViYWN0aW9ucyZsb2dvQ29sb3I9d2hpdGUiIC8+CjxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL0RpZ2l0YWxPY2Vhbi0wRDU4NTg/c3R5bGU9ZmxhdC1zcXVhcmUmbG9nbz1kaWdpdGFsb2NlYW4mbG9nb0NvbG9yPXdoaXRlIiAvPgoKPC9kaXY+CgotLS0KCjxhIGlkPSJwcm9qZWN0cyI+PC9hPgo8ZGl2IGFsaWduPSJjZW50ZXIiPgoKIyMg8J+agCBGbGFnc2hpcCBQcm9qZWN0IOKAlCBSQUhBIFJpZGUKCipSZWFsLXRpbWUgcmlkZS1oYWlsaW5nIHBsYXRmb3JtIMK3IHBhc3NlbmdlciAmIGRyaXZlciB3b3JrZmxvd3MgwrcgcHJvZHVjdGlvbiBkZXBsb3ltZW50KgoKIVtUeXBlU2NyaXB0XShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL1R5cGVTY3JpcHQtMEQ1ODU4P3N0eWxlPWZsYXQtc3F1YXJlJmxvZ289dHlwZXNjcmlwdCZsb2dvQ29sb3I9d2hpdGUpCiFbTm9kZS5qc10oaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS9Ob2RlLmpzLUUwNzYyOD9zdHlsZT1mbGF0LXNxdWFyZSZsb2dvPW5vZGUuanMmbG9nb0NvbG9yPXdoaXRlKQohW1JlYWN0XShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL1JlYWN0LTFBNzA3MD9zdHlsZT1mbGF0LXNxdWFyZSZsb2dvPXJlYWN0JmxvZ29Db2xvcj13aGl0ZSkKIVtQb3N0Z3JlU1FMXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL1Bvc3RncmVTUUwtRTA3NjI4P3N0eWxlPWZsYXQtc3F1YXJlJmxvZ289cG9zdGdyZXNxbCZsb2dvQ29sb3I9d2hpdGUpCiFbU29ja2V0LklPXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL1NvY2tldC5JTy0xQTcwNzA/c3R5bGU9ZmxhdC1zcXVhcmUmbG9nbz1zb2NrZXQuaW8mbG9nb0NvbG9yPXdoaXRlKQohW1JlZGlzXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL1JlZGlzLTBENTg1OD9zdHlsZT1mbGF0LXNxdWFyZSZsb2dvPXJlZGlzJmxvZ29Db2xvcj13aGl0ZSkKIVtEb2NrZXJdKGh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvRG9ja2VyLUUwNzYyOD9zdHlsZT1mbGF0LXNxdWFyZSZsb2dvPWRvY2tlciZsb2dvQ29sb3I9d2hpdGUpCiFbRGlnaXRhbE9jZWFuXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL0RpZ2l0YWxPY2Vhbi0xQTcwNzA/c3R5bGU9ZmxhdC1zcXVhcmUmbG9nbz1kaWdpdGFsb2NlYW4mbG9nb0NvbG9yPXdoaXRlKQoKPC9kaXY+Cgo8YnIvPgoKPHRhYmxlPgo8dHI+Cjx0ZCB3aWR0aD0iMzMlIiBhbGlnbj0iY2VudGVyIj4KCioq4pqhIFJlYWwtVGltZSBFbmdpbmUqKgoKUkVTVCBBUElzIMK3IGF1dGhlbnRpY2F0aW9uICYgYXV0aG9yaXphdGlvbiDCtyByZWFsLXRpbWUgY29tbXVuaWNhdGlvbiBmb3IgbGl2ZSB0cmlwIGFuZCByaWRlIG1hbmFnZW1lbnQKCjwvdGQ+Cjx0ZCB3aWR0aD0iMzMlIiBhbGlnbj0iY2VudGVyIj4KCioq8J+XhO+4jyBEYXRhYmFzZS1Ecml2ZW4qKgoKUmVsaWFibGUsIGRhdGFiYXNlLWRyaXZlbiB3b3JrZmxvd3MgcG93ZXJpbmcgcGFzc2VuZ2VyIGFuZCBkcml2ZXIgZXhwZXJpZW5jZXMgZW5kIHRvIGVuZAoKPC90ZD4KPHRkIHdpZHRoPSIzMyUiIGFsaWduPSJjZW50ZXIiPgoKKirwn4+tIEZ1bGwgTGlmZWN5Y2xlKioKClJlcXVpcmVtZW50cyDihpIgYXJjaGl0ZWN0dXJlIOKGkiBkZXZlbG9wbWVudCDihpIgdGVzdGluZyDihpIgcHJvZHVjdGlvbiBkZXBsb3ltZW50ICYgbWFpbnRlbmFuY2UKCjwvdGQ+CjwvdHI+CjwvdGFibGU+CgotLS0KCjxkaXYgYWxpZ249ImNlbnRlciI+CgojIyDwn6epIE1vcmUgU2VsZWN0ZWQgUHJvamVjdHMKCjwvZGl2PgoKfCBQcm9qZWN0IHwgV2hhdCBpdCBkb2VzIHwKfC0tLXwtLS18CnwgKipOaWt1IE1vYmlsaXR5KiogKihwZXJzb25hbCBwcm9qZWN0KSogfCBSZWFsLXRpbWUgc21hcnQgcGFya2luZyBhcHAg4oCUIG1vYmlsZSwgYmFja2VuZCwgYW5kIEFQSSBpbnRlZ3JhdGlvbiBmb3IgbGl2ZSBwYXJraW5nIHdvcmtmbG93cyB8CnwgKipNQUhERVIgKOGIm+GIheGLsOGIrSkqKiB8IFNtYXJ0IGRpZ2l0YWwgcmVjb3JkcyAmIGFyY2hpdmUgcGxhdGZvcm0gd2l0aCByb2xlLWJhc2VkIGFjY2VzcyBhbmQgKipvZmZsaW5lLWZpcnN0IHN5bmMqKiB8CnwgKipTYWFTIFN0YXJ0ZXIgS2l0KiogfCBNb2R1bGFyIG11bHRpLXRlbmFudCBTYWFTIGFyY2hpdGVjdHVyZSDigJQgc2hhcmVkLWRhdGFiYXNlIGFuZCBkZWRpY2F0ZWQtZGF0YWJhc2UgdGVuYW50IGlzb2xhdGlvbiBzdHJhdGVnaWVzIHwKfCAqKlllbmUqKiB8IFByb3BlcnR5ICYgdmVoaWNsZSBtYXJrZXRwbGFjZSDigJQgbGlzdGluZ3MsIGFnZW50IHdvcmtmbG93cywgQjJCLCBhbmQgYXVjdGlvbnMgfAp8ICoqRS1MZWFybmluZyBQbGF0Zm9ybSoqIHwgUGFpZCBjb3Vyc2VzLCBsaXZlIGNsYXNzZXMsIGFuZCB0ZWFjaGVyL3N0dWRlbnQgZGFzaGJvYXJkcyB3aXRoIHBheW1lbnQgaW50ZWdyYXRpb24gfAoKLS0tCgo8YSBpZD0ib3Blbi1zb3VyY2UiPjwvYT4KPGRpdiBhbGlnbj0iY2VudGVyIj4KCiMjIPCfk6YgT3BlbiBTb3VyY2UKCjwvZGl2PgoKPHRhYmxlPgo8dHI+Cjx0ZD4KCjxkaXYgYWxpZ249ImNlbnRlciI+CgojIyMg8J+Pl++4jyBbTnlhbGFKU10oaHR0cHM6Ly9naXRodWIuY29tL255YWxhanMvbnlhbGFqcykg4oCUIENyZWF0b3IKClshW0dpdEh1Yl0oaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS9HaXRIdWItbnlhbGFqcyUyRm55YWxhanMtMEQ1ODU4P3N0eWxlPWZvci10aGUtYmFkZ2UmbG9nbz1naXRodWImbG9nb0NvbG9yPXdoaXRlKV0oaHR0cHM6Ly9naXRodWIuY29tL255YWxhanMvbnlhbGFqcykKWyFbbnBtXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL25wbS0lNDBueWFsYWpzLUUwNzYyOD9zdHlsZT1mb3ItdGhlLWJhZGdlJmxvZ289bnBtJmxvZ29Db2xvcj13aGl0ZSldKGh0dHBzOi8vd3d3Lm5wbWpzLmNvbS9vcmcvbnlhbGFqcykKWyFbV2Vic2l0ZV0oaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS9Eb2NzLVJlYWQlMjBOb3ctMUE3MDcwP3N0eWxlPWZvci10aGUtYmFkZ2UpXShodHRwczovL3dlYnNpdGUtcmhvLW9uZS12OGRoZDFjb3kwLnZlcmNlbC5hcHAvKQpbIVtMaWNlbnNlOiBNSVRdKGh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvTGljZW5zZS1NSVQtRTA3NjI4P3N0eWxlPWZvci10aGUtYmFkZ2UpXShodHRwczovL2dpdGh1Yi5jb20vbnlhbGFqcy9ueWFsYWpzKQoKKipQcm9kdWN0aW9uLXJlYWR5IFR5cGVTY3JpcHQgZnJhbWV3b3JrIOKAlCBhIG1vbm9yZXBvIG9mIDE1KyBmb2N1c2VkIHBhY2thZ2VzLCBub3QganVzdCBzY2FmZm9sZGluZyoqCgo8L2Rpdj4KCmBgYGJhc2gKbnBtIGluc3RhbGwgLWcgQG55YWxhanMvY2xpCm55YWxhIG5ldyBteS1hcHAgLS10ZW1wbGF0ZT1zYWFzCmBgYAoK4pymIEZ1bGwgTVZDIGFyY2hpdGVjdHVyZSDigJQgY29udHJvbGxlcnMsIHNlcnZpY2VzLCByZXBvc2l0b3JpZXMsIERJCuKcpiBCdWlsdC1pbiBKV1QgYXV0aCB3aXRoIHJlZnJlc2ggdG9rZW5zIChgQG55YWxhanMvc2VjdXJpdHlgKQrinKYgTXVsdGktdGVuYW5jeSB3aXRoIGF1dG9tYXRpYyBkYXRhIGlzb2xhdGlvbiAoYEBueWFsYWpzL3RlbmFuY3lgKQrinKYgVGhyZWUgcmVhZHktbWFkZSBzdGFydGVyIHRlbXBsYXRlcyDigJQgKipCYXNpYyoqLCAqKlNhYVMqKiwgYW5kICoqQ01TKioK4pymIGBAbnlhbGFqcy9haWAg4oCUIGZyYW1ld29yay1hd2FyZSBBSSBhc3Npc3RhbnQgKGBueWFsYSBhc2sgLyBleHBsYWluIC8gcmV2aWV3IC8gZG9jdG9yIC8gcmVzb2x2ZWApCuKcpiBEYXRhYmFzZSBPUk0gJiBtaWdyYXRpb25zLCB2YWxpZGF0aW9uLCBjYWNoaW5nLCBxdWV1ZXMsIG1haWwsIHN0b3JhZ2UsIGFuZCBvYnNlcnZhYmlsaXR5IHBhY2thZ2VzCuKcpiBDb21wYW5pb24gVlMgQ29kZSBleHRlbnNpb25zIOKAlCBOeWFsYS5qcyBJY29ucyAoZmlsZS1pY29uIHRoZW1lKSBhbmQgTnlhbGEuanMgVGhlbWUgKGNvbG9yIHRoZW1lKQoKPC90ZD4KPC90cj4KPC90YWJsZT4KCjxkaXYgYWxpZ249ImNlbnRlciI+CgojIyMgbnBtIFBhY2thZ2VzCgo8L2Rpdj4KCjx0YWJsZT4KPHRyPgo8dGQgd2lkdGg9IjUwJSI+Cgo8ZGl2IGFsaWduPSJjZW50ZXIiPgoKIyMjIPCflI0gW20tc2VvXShodHRwczovL2hhaWxlbWFyaXlhbS5naXRodWIuaW8vbS1zZW8vKQoKWyFbbnBtXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL25wbS1pbnN0YWxsJTIwbS0tc2VvLUUwNzYyOD9zdHlsZT1mb3ItdGhlLWJhZGdlJmxvZ289bnBtJmxvZ29Db2xvcj13aGl0ZSldKGh0dHBzOi8vd3d3Lm5wbWpzLmNvbS9wYWNrYWdlL20tc2VvKQpbIVtEb2NzXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL0RvY3MtUmVhZCUyME5vdy0xQTcwNzA/c3R5bGU9Zm9yLXRoZS1iYWRnZSldKGh0dHBzOi8vaGFpbGVtYXJpeWFtLmdpdGh1Yi5pby9tLXNlby8pCgoqKkZyYW1ld29yay1hZ25vc3RpYyBTRU8gZWNvc3lzdGVtKioKCjwvZGl2PgoKYGBgYmFzaApucG0gaW5zdGFsbCBtLXNlbwpgYGAKCuKcpiBVbml2ZXJzYWwgU0VPIHRhZ3MgKE9HIMK3IFR3aXR0ZXIgwrcgSlNPTi1MRCkK4pymIEJvdCBkZXRlY3Rpb24gJiBBSSBjb250ZW50IGFuYWx5c2lzCuKcpiBJbWFnZS9WaWRlbyBTRU8K4pymIFNvY2lhbCBwcmV2aWV3ICYgYW5hbHl0aWNzIGludGVncmF0aW9uCuKcpiBTREtzICYgYWRhcHRlcnMgZm9yIG11bHRpcGxlIGZyYW1ld29ya3MK4pymIE9wZW4tc291cmNlIGRvY3MgKyBsaXZlIGRlbW8gYXBwcwoKPC90ZD4KPHRkIHdpZHRoPSI1MCUiPgoKPGRpdiBhbGlnbj0iY2VudGVyIj4KCiMjIyDwn5SQIFt3ZW5maXQtdmFsaWRhdG9yXShodHRwczovL3dlbmZpdC12YWxpZGF0b3IudmVyY2VsLmFwcC9pbnRyb2R1Y3Rpb24uaHRtbCkKClshW25wbV0oaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS9ucG0taW5zdGFsbCUyMHdlbmZpdC0tdmFsaWRhdG9yLUUwNzYyOD9zdHlsZT1mb3ItdGhlLWJhZGdlJmxvZ289bnBtJmxvZ29Db2xvcj13aGl0ZSldKGh0dHBzOi8vd3d3Lm5wbWpzLmNvbS9wYWNrYWdlL3dlbmZpdC12YWxpZGF0b3IpClshW0RvY3NdKGh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvRG9jcy1SZWFkJTIwTm93LTFBNzA3MD9zdHlsZT1mb3ItdGhlLWJhZGdlKV0oaHR0cHM6Ly93ZW5maXQtdmFsaWRhdG9yLnZlcmNlbC5hcHAvaW50cm9kdWN0aW9uLmh0bWwpCgoqKlVuaXZlcnNhbCBUeXBlU2NyaXB0IHZhbGlkYXRpb24gbGlicmFyeSoqCgo8L2Rpdj4KCmBgYGJhc2gKbnBtIGluc3RhbGwgd2VuZml0LXZhbGlkYXRvcgpgYGAKCuKcpiBBdXRvbWF0aWMgVHlwZVNjcmlwdCB0eXBlIGluZmVyZW5jZQrinKYgRGVmaW5lIG9uY2UsIHZhbGlkYXRlIGV2ZXJ5d2hlcmUgKGZ1bGwtc3RhY2spCuKcpiBaZXJvIGV4dGVybmFsIGRlcGVuZGVuY2llcwrinKYgQXN5bmMgdmFsaWRhdGlvbiAoREIgY2hlY2tzIMK3IEFQSSBjYWxscykK4pymIENvbXBvc2FibGUgJiBleHRlbnNpYmxlIHNjaGVtYXMK4pymIFBsdWdpbiBzeXN0ZW0gKyBpMThuIHJlYWR5Cgo8L3RkPgo8L3RyPgo8L3RhYmxlPgoKLS0tCgo8YSBpZD0ic3RhdHMiPjwvYT4KPGRpdiBhbGlnbj0iY2VudGVyIj4KCiMjIPCfk4ogR2l0SHViIEFuYWx5dGljcwoKPGltZyBoZWlnaHQ9IjE3NWVtIiBzcmM9Imh0dHBzOi8vZ2l0aHViLXN0YXRzLWV4dGVuZGVkLnZlcmNlbC5hcHAvYXBpP3VzZXJuYW1lPUhhaWxlbWFyaXlhbSZzaG93X2ljb25zPXRydWUmdGhlbWU9ZGFyayZoaWRlX2JvcmRlcj10cnVlJmJnX2NvbG9yPTBkMTExNyZ0aXRsZV9jb2xvcj1FMDc2MjgmaWNvbl9jb2xvcj0xQTcwNzAmdGV4dF9jb2xvcj1GMkQ1QjgmaW5jbHVkZV9hbGxfY29tbWl0cz10cnVlJmNvdW50X3ByaXZhdGU9dHJ1ZSIgLz4KPGltZyBoZWlnaHQ9IjE3NWVtIiBzcmM9Imh0dHBzOi8vZ2l0aHViLXN0YXRzLWV4dGVuZGVkLnZlcmNlbC5hcHAvYXBpL3RvcC1sYW5ncy8/dXNlcm5hbWU9SGFpbGVtYXJpeWFtJmxheW91dD1jb21wYWN0JnRoZW1lPWRhcmsmaGlkZV9ib3JkZXI9dHJ1ZSZiZ19jb2xvcj0wZDExMTcmdGl0bGVfY29sb3I9RTA3NjI4JnRleHRfY29sb3I9RjJENUI4IiAvPgoKPGJyLz4KCjxpbWcgc3JjPSJodHRwczovL3N0cmVhay1zdGF0cy5kZW1vbGFiLmNvbS8/dXNlcj1IYWlsZW1hcml5YW0mdGhlbWU9ZGFyayZoaWRlX2JvcmRlcj10cnVlJmJhY2tncm91bmQ9MGQxMTE3JnJpbmc9RTA3NjI4JmZpcmU9RTA3NjI4JmN1cnJTdHJlYWtMYWJlbD0xQTcwNzAmc2lkZUxhYmVscz0xQTcwNzAmY3VyclN0cmVha051bT1mZmZmZmYmc2lkZU51bXM9ZmZmZmZmJmRhdGVzPTg4ODg4OCIgLz4KCjxici8+Cgo8aW1nIHNyYz0iaHR0cHM6Ly9naXRodWItcmVhZG1lLWFjdGl2aXR5LWdyYXBoLnZlcmNlbC5hcHAvZ3JhcGg/dXNlcm5hbWU9SGFpbGVtYXJpeWFtJnRoZW1lPXRva3lvLW5pZ2h0JmhpZGVfYm9yZGVyPXRydWUmYmdfY29sb3I9MGQxMTE3JmNvbG9yPUUwNzYyOCZsaW5lPTFBNzA3MCZwb2ludD1FMDc2MjgmYXJlYT10cnVlIiAvPgoKPGJyLz4KCjxpbWcgc3JjPSJodHRwczovL2dpdGh1Yi1wcm9maWxlLXRyb3BoeS52ZXJjZWwuYXBwLz91c2VybmFtZT1IYWlsZW1hcml5YW0mdGhlbWU9ZGFya2h1YiZuby1mcmFtZT10cnVlJm5vLWJnPXRydWUmcm93PTEmY29sdW1uPTYmbWFyZ2luLXc9OCIgLz4KCjwvZGl2PgoKLS0tCgo8ZGl2IGFsaWduPSJjZW50ZXIiPgoKIyMg8J+OryBDdXJyZW50bHkgQnVpbGRpbmcKClshW0ZyZWVsYW5jZV0oaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS/wn5K7X09wZW5fdG9fRnJlZWxhbmNlX1dvcmstMEQ1ODU4P3N0eWxlPWZvci10aGUtYmFkZ2UpXSgjaGlyZS1tZSkKWyFbQXBwc10oaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS/imqFfRnVsbC0tU3RhY2tfV2ViX2FuZF9Nb2JpbGVfQXBwcy1FMDc2Mjg/c3R5bGU9Zm9yLXRoZS1iYWRnZSldKCNwcm9qZWN0cykKWyFbUlRdKGh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2Uv8J+UhF9SZWFsLS1UaW1lX1N5c3RlbXMtMUE3MDcwP3N0eWxlPWZvci10aGUtYmFkZ2UpXSgjcHJvamVjdHMpClshW055YWxhXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL/Cfj5fvuI9fTnlhbGFKU19GcmFtZXdvcmstRTA3NjI4P3N0eWxlPWZvci10aGUtYmFkZ2UpXShodHRwczovL2dpdGh1Yi5jb20vbnlhbGFqcy9ueWFsYWpzKQpbIVtPU1NdKGh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2Uv8J+Tpl9PcGVuX1NvdXJjZV9ucG1fTGlicmFyaWVzLTBENTg1OD9zdHlsZT1mb3ItdGhlLWJhZGdlKV0oI29wZW4tc291cmNlKQoKPGJyLz48YnIvPgoK8J+OkyAqKkJTYyBpbiBTb2Z0d2FyZSBFbmdpbmVlcmluZyoqIOKAlCBXb2xsbyBVbml2ZXJzaXR5LCBFdGhpb3BpYSDCtyAyMDE54oCTMjAyNAoKPC9kaXY+CgotLS0KCjxhIGlkPSJoaXJlLW1lIj48L2E+CjxkaXYgYWxpZ249ImNlbnRlciI+CgojIyDwn6SdIExldCdzIFdvcmsgVG9nZXRoZXIKCkknbSBjdXJyZW50bHkgZnJlZWxhbmNpbmcgYW5kIG9wZW4gdG8gbmV3IGZ1bGwtc3RhY2sgYW5kIG1vYmlsZSBwcm9qZWN0cyDigJQgd2ViIGFwcHMsIHJlYWwtdGltZSBzeXN0ZW1zLCBBUElzLCBvciB0dXJuaW5nIGFuIGlkZWEgaW50byBhIHByb2R1Y3Rpb24gYnVpbGQuCgpbIVtIaXJlIE1lXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL/Cfk6lfR2V0X0luX1RvdWNoLUUwNzYyOD9zdHlsZT1mb3ItdGhlLWJhZGdlKV0obWFpbHRvOmhhaWxlbWFyaXlhbTMyOThAZ21haWwuY29tKQpbIVtQb3J0Zm9saW9dKGh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2Uv8J+MkF9TZWVfTXlfV29yay0xQTcwNzA/c3R5bGU9Zm9yLXRoZS1iYWRnZSldKGh0dHBzOi8vaGFpbGVtYXJpeWFtLnRlY2gpClshW0xpbmtlZEluXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL/CfkrxfQ29ubmVjdF9vbl9MaW5rZWRJbi0wRDU4NTg/c3R5bGU9Zm9yLXRoZS1iYWRnZSZsb2dvPWxpbmtlZGluJmxvZ29Db2xvcj13aGl0ZSldKGh0dHBzOi8vbGlua2VkaW4uY29tL2luL2hhaWxlbWFyaXlhbS1rZWJlZGUtMWI2MDY2Mjk2KQoKPGJyLz4KCjxpbWcgc3JjPSJodHRwczovL2NhcHN1bGUtcmVuZGVyLnZlcmNlbC5hcHAvYXBpP3R5cGU9d2F2aW5nJmNvbG9yPTA6RTA3NjI4LDUwOjFBNzA3MCwxMDA6MEQ1ODU4JmhlaWdodD0xMzAmc2VjdGlvbj1mb290ZXImYW5pbWF0aW9uPWZhZGVJbiIgLz4KCirwn5KhICJJIGJ1aWxkIHN5c3RlbXMgdGhhdCBzY2FsZSwgbm90IGp1c3QgYXBwbGljYXRpb25zIHRoYXQgcnVuLiIqCgrirZAgKipTdGFyIGEgcmVwb3NpdG9yeSBpZiB5b3UgZmluZCBpdCB1c2VmdWwhKioKCjwvZGl2Pgo=";
-  function decodeB64Utf8(b64){
-    var binary = atob(b64);
-    var bytes = new Uint8Array(binary.length);
-    for (var i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
-    return new TextDecoder("utf-8").decode(bytes);
-  }
-  try {
-    var raw = decodeB64Utf8(README_B64);
-    var html = marked.parse(raw, { gfm: true, breaks: false });
-    document.getElementById("content").innerHTML = html;
-  } catch (e) {
-    document.getElementById("content").textContent = "Preview render failed: " + e.message;
-  }
-</script>
-</body>
-</html>
+<br/>
+
+[![Status](https://img.shields.io/badge/🟢_Available_for_Freelance_Work-1A7070?style=for-the-badge)](mailto:hailemariyam3298@gmail.com)
+
+<br/><br/>
+
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-hailemariyam.tech-1A7070?style=for-the-badge)](https://hailemariyam.tech)
+[![Gmail](https://img.shields.io/badge/Gmail-E07628?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hailemariyam3298@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0D5858?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/hailemariyam-kebede-1b6066296)
+[![X](https://img.shields.io/badge/X_(Twitter)-E07628?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Hailemariy356)
+[![Views](https://komarev.com/ghpvc/?username=Hailemariyam&color=E07628&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/Hailemariyam)
+
+📍 Addis Ababa, Ethiopia
+
+</div>
+
+---
+
+<div align="center">
+
+[`{ about }`](#about) · [`{ experience }`](#experience) · [`{ tech }`](#tech) · [`{ projects }`](#projects) · [`{ open source }`](#open-source) · [`{ stats }`](#stats) · [`{ hire me }`](#hire-me)
+
+</div>
+
+---
+
+<a id="about"></a>
+<div align="center">
+
+## `{ about: me }`
+
+</div>
+
+```typescript
+const hailemariyam = {
+  role       : "Freelance Full-Stack Software Engineer · Mobile Application Developer",
+  location   : "Addis Ababa, Ethiopia 🇪🇹",
+  experience : "3+ years",
+  status     : "🟢 Available for freelance and contract work",
+  previously : ["Full-Stack Software Engineer @ Trust Technologies (2026)",
+                "Full-Stack Engineer @ Degan Technologies (2024–2026)"],
+  stack      : ["TypeScript", "JavaScript", "Node.js", "Express.js", "Laravel",
+                "React", "Next.js", "Vue.js", "Flutter", "Python"],
+  shipped    : ["RAHA Ride — real-time ride-hailing platform",
+                "Niku Mobility — real-time smart parking app (personal project)",
+                "MAHDER — offline-first digital archive platform",
+                "NyalaJS — enterprise TypeScript framework, 15+ packages (creator)"],
+  quote      : "I build systems that scale, not just applications that run.",
+};
+```
+
+---
+
+<a id="experience"></a>
+<div align="center">
+
+## 💼 Experience
+
+</div>
+
+> **🟢 Freelance Full-Stack & Mobile Developer** — Addis Ababa, Ethiopia · *Currently*
+> Taking on full-stack web and mobile projects — from architecture through deployment. Open to remote, contract, and short-term engagements. [Get in touch →](mailto:hailemariyam3298@gmail.com)
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Trust Technologies** — Addis Ababa, Ethiopia
+*Mobile Application Developer → Full-Stack Software Engineer*
+`2026`
+
+Progressed from building cross-platform mobile apps with Flutter into full-stack development across frontend, backend, API, and database layers. Built **RAHA Ride**, a real-time ride-hailing platform, including REST APIs, auth, and real-time application functionality.
+
+</td>
+<td width="50%" valign="top">
+
+**Degan Technologies** — Addis Ababa, Ethiopia
+*Full-Stack Engineer*
+`Jan 2024 – Feb 2026`
+
+Built and maintained production web and mobile platforms across e-learning, digital library, knowledge management, and school management domains — role-based dashboards, REST APIs, and database-driven workflows with Laravel, Vue.js, Next.js, and TypeScript.
+
+</td>
+</tr>
+</table>
+
+---
+
+<a id="tech"></a>
+<div align="center">
+
+## 🛠️ Tech Arsenal
+
+### ⚡ Frontend
+<img src="https://skillicons.dev/icons?i=react,nextjs,vue,typescript,javascript,html,css&theme=dark" />
+
+### 🔥 Backend
+<img src="https://skillicons.dev/icons?i=nodejs,express,laravel,python&theme=dark" />
+<br/>
+<img src="https://img.shields.io/badge/Socket.IO-0D5858?style=flat-square&logo=socket.io&logoColor=white" />
+
+### 📱 Mobile & Data
+<img src="https://skillicons.dev/icons?i=flutter,dart,firebase,postgres,mysql,sqlite,mongodb,redis&theme=dark" />
+<br/>
+<img src="https://img.shields.io/badge/SQL_Server-E07628?style=flat-square&logo=microsoftsqlserver&logoColor=white" />
+
+### ☁️ DevOps & Cloud
+<img src="https://skillicons.dev/icons?i=docker,git,linux&theme=dark" />
+<br/>
+<img src="https://img.shields.io/badge/CI%2FCD-1A7070?style=flat-square&logo=githubactions&logoColor=white" />
+<img src="https://img.shields.io/badge/DigitalOcean-0D5858?style=flat-square&logo=digitalocean&logoColor=white" />
+
+</div>
+
+---
+
+<a id="projects"></a>
+<div align="center">
+
+## 🚀 Flagship Project — RAHA Ride
+
+*Real-time ride-hailing platform · passenger & driver workflows · production deployment*
+
+![TypeScript](https://img.shields.io/badge/TypeScript-0D5858?style=flat-square&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-E07628?style=flat-square&logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/React-1A7070?style=flat-square&logo=react&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-E07628?style=flat-square&logo=postgresql&logoColor=white)
+![Socket.IO](https://img.shields.io/badge/Socket.IO-1A7070?style=flat-square&logo=socket.io&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-0D5858?style=flat-square&logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-E07628?style=flat-square&logo=docker&logoColor=white)
+![DigitalOcean](https://img.shields.io/badge/DigitalOcean-1A7070?style=flat-square&logo=digitalocean&logoColor=white)
+
+</div>
+
+<br/>
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+**⚡ Real-Time Engine**
+
+REST APIs · authentication & authorization · real-time communication for live trip and ride management
+
+</td>
+<td width="33%" align="center">
+
+**🗄️ Database-Driven**
+
+Reliable, database-driven workflows powering passenger and driver experiences end to end
+
+</td>
+<td width="33%" align="center">
+
+**🏭 Full Lifecycle**
+
+Requirements → architecture → development → testing → production deployment & maintenance
+
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+## 🧩 More Selected Projects
+
+</div>
+
+| Project | What it does |
+|---|---|
+| **Niku Mobility** *(personal project)* | Real-time smart parking app — mobile, backend, and API integration for live parking workflows |
+| **MAHDER (ማህደር)** | Smart digital records & archive platform with role-based access and **offline-first sync** |
+| **SaaS Starter Kit** | Modular multi-tenant SaaS architecture — shared-database and dedicated-database tenant isolation strategies |
+| **Yene** | Property & vehicle marketplace — listings, agent workflows, B2B, and auctions |
+| **E-Learning Platform** | Paid courses, live classes, and teacher/student dashboards with payment integration |
+
+---
+
+<a id="open-source"></a>
+<div align="center">
+
+## 📦 Open Source
+
+</div>
+
+<table>
+<tr>
+<td>
+
+<div align="center">
+
+### 🏗️ [NyalaJS](https://github.com/nyalajs/nyalajs) — Creator
+
+[![GitHub](https://img.shields.io/badge/GitHub-nyalajs%2Fnyalajs-0D5858?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nyalajs/nyalajs)
+[![npm](https://img.shields.io/badge/npm-%40nyalajs-E07628?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/org/nyalajs)
+[![Website](https://img.shields.io/badge/Docs-Read%20Now-1A7070?style=for-the-badge)](https://website-rho-one-v8dhd1coy0.vercel.app/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-E07628?style=for-the-badge)](https://github.com/nyalajs/nyalajs)
+
+**Production-ready TypeScript framework — a monorepo of 15+ focused packages, not just scaffolding**
+
+</div>
+
+```bash
+npm install -g @nyalajs/cli
+nyala new my-app --template=saas
+```
+
+✦ Full MVC architecture — controllers, services, repositories, DI
+✦ Built-in JWT auth with refresh tokens (`@nyalajs/security`)
+✦ Multi-tenancy with automatic data isolation (`@nyalajs/tenancy`)
+✦ Three ready-made starter templates — **Basic**, **SaaS**, and **CMS**
+✦ `@nyalajs/ai` — framework-aware AI assistant (`nyala ask / explain / review / doctor / resolve`)
+✦ Database ORM & migrations, validation, caching, queues, mail, storage, and observability packages
+✦ Companion VS Code extensions — Nyala.js Icons (file-icon theme) and Nyala.js Theme (color theme)
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+### npm Packages
+
+</div>
+
+<table>
+<tr>
+<td width="50%">
+
+<div align="center">
+
+### 🔍 [m-seo](https://hailemariyam.github.io/m-seo/)
+
+[![npm](https://img.shields.io/badge/npm-install%20m--seo-E07628?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/m-seo)
+[![Docs](https://img.shields.io/badge/Docs-Read%20Now-1A7070?style=for-the-badge)](https://hailemariyam.github.io/m-seo/)
+
+**Framework-agnostic SEO ecosystem**
+
+</div>
+
+```bash
+npm install m-seo
+```
+
+✦ Universal SEO tags (OG · Twitter · JSON-LD)
+✦ Bot detection & AI content analysis
+✦ Image/Video SEO
+✦ Social preview & analytics integration
+✦ SDKs & adapters for multiple frameworks
+✦ Open-source docs + live demo apps
+
+</td>
+<td width="50%">
+
+<div align="center">
+
+### 🔐 [wenfit-validator](https://wenfit-validator.vercel.app/introduction.html)
+
+[![npm](https://img.shields.io/badge/npm-install%20wenfit--validator-E07628?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/wenfit-validator)
+[![Docs](https://img.shields.io/badge/Docs-Read%20Now-1A7070?style=for-the-badge)](https://wenfit-validator.vercel.app/introduction.html)
+
+**Universal TypeScript validation library**
+
+</div>
+
+```bash
+npm install wenfit-validator
+```
+
+✦ Automatic TypeScript type inference
+✦ Define once, validate everywhere (full-stack)
+✦ Zero external dependencies
+✦ Async validation (DB checks · API calls)
+✦ Composable & extensible schemas
+✦ Plugin system + i18n ready
+
+</td>
+</tr>
+</table>
+
+---
+
+<a id="stats"></a>
+<div align="center">
+
+## 📊 GitHub Analytics
+
+<img height="175em" src="https://github-readme-stats.vercel.app/api?username=Hailemariyam&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=E07628&icon_color=1A7070&text_color=F2D5B8&include_all_commits=true&count_private=true" />
+<img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hailemariyam&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=E07628&text_color=F2D5B8" />
+
+<br/>
+
+<img src="https://streak-stats.demolab.com/?user=Hailemariyam&theme=dark&hide_border=true&background=0d1117&ring=E07628&fire=E07628&currStreakLabel=1A7070&sideLabels=1A7070&currStreakNum=ffffff&sideNums=ffffff&dates=888888" />
+
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Hailemariyam&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=E07628&line=1A7070&point=E07628&area=true" />
+
+<br/>
+
+<img src="https://github-profile-trophy.vercel.app/?username=Hailemariyam&theme=darkhub&no-frame=true&no-bg=true&row=1&column=6&margin-w=8" />
+
+</div>
+
+---
+
+<div align="center">
+
+## 🎯 Currently Building
+
+[![Freelance](https://img.shields.io/badge/💻_Open_to_Freelance_Work-0D5858?style=for-the-badge)](#hire-me)
+[![Apps](https://img.shields.io/badge/⚡_Full--Stack_Web_and_Mobile_Apps-E07628?style=for-the-badge)](#projects)
+[![RT](https://img.shields.io/badge/🔄_Real--Time_Systems-1A7070?style=for-the-badge)](#projects)
+[![Nyala](https://img.shields.io/badge/🏗️_NyalaJS_Framework-E07628?style=for-the-badge)](https://github.com/nyalajs/nyalajs)
+[![OSS](https://img.shields.io/badge/📦_Open_Source_npm_Libraries-0D5858?style=for-the-badge)](#open-source)
+
+<br/><br/>
+
+🎓 **BSc in Software Engineering** — Wollo University, Ethiopia · 2019–2024
+
+</div>
+
+---
+
+<a id="hire-me"></a>
+<div align="center">
+
+## 🤝 Let's Work Together
+
+I'm currently freelancing and open to new full-stack and mobile projects — web apps, real-time systems, APIs, or turning an idea into a production build.
+
+[![Hire Me](https://img.shields.io/badge/📩_Get_In_Touch-E07628?style=for-the-badge)](mailto:hailemariyam3298@gmail.com)
+[![Portfolio](https://img.shields.io/badge/🌐_See_My_Work-1A7070?style=for-the-badge)](https://hailemariyam.tech)
+[![LinkedIn](https://img.shields.io/badge/💼_Connect_on_LinkedIn-0D5858?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/hailemariyam-kebede-1b6066296)
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:E07628,50:1A7070,100:0D5858&height=130&section=footer&animation=fadeIn" />
+
+*💡 "I build systems that scale, not just applications that run."*
+
+⭐ **Star a repository if you find it useful!**
+
+</div>
