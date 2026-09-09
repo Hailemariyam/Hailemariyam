@@ -4,7 +4,7 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=18&pause=1200&color=E07628&center=true&vCenter=true&width=800&height=50&lines=🏗️+Full-Stack+%26+Mobile+Engineer+%7C+3%2B+Years+Shipping+Production+Software;💻+Available+for+Freelance+and+Contract+Work;⚡+Real-Time+Systems+%7C+RAHA+Ride+and+Niku+Mobility;🚀+Creator+of+NyalaJS+%7C+Open+Source+on+npm" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1200&color=E07628&center=true&vCenter=true&width=800&height=50&lines=🏗️+Full-Stack+%26+Mobile+Engineer+%7C+3%2B+Years+Shipping+Production+Software;💻+Available+for+Freelance+and+Contract+Work;⚡+Real-Time+Systems+%7C+RAHA+Ride+and+Niku+Mobility;🚀+Creator+of+NyalaJS+%7C+Open+Source+on+npm" />
 
 <br/>
 
@@ -300,7 +300,7 @@ npm install wenfit-validator
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Hailemariyam&theme=dark&hide_border=true&background=0d1117&ring=E07628&fire=E07628&currStreakLabel=1A7070&sideLabels=1A7070&currStreakNum=ffffff&sideNums=ffffff&dates=888888" />
+<img src="https://streak-stats.demolab.com/?user=Hailemariyam&theme=dark&hide_border=true&background=0d1117&ring=E07628&fire=E07628&currStreakLabel=1A7070&sideLabels=1A7070&currStreakNum=ffffff&sideNums=ffffff&dates=888888" />
 
 <br/>
 
