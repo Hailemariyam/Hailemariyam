@@ -134,8 +134,9 @@ Built and maintained production web and mobile platforms across e-learning, digi
 ![React](https://img.shields.io/badge/React-1A7070?style=flat-square&logo=react&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-E07628?style=flat-square&logo=postgresql&logoColor=white)
 ![Socket.IO](https://img.shields.io/badge/Socket.IO-1A7070?style=flat-square&logo=socket.io&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-0D5858?style=flat-square&logo=docker&logoColor=white)
-![DigitalOcean](https://img.shields.io/badge/DigitalOcean-E07628?style=flat-square&logo=digitalocean&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-0D5858?style=flat-square&logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-E07628?style=flat-square&logo=docker&logoColor=white)
+![DigitalOcean](https://img.shields.io/badge/DigitalOcean-1A7070?style=flat-square&logo=digitalocean&logoColor=white)
 
 </div>
 
@@ -317,11 +318,11 @@ npm install wenfit-validator
 
 ## 🎯 Currently Building
 
-![Freelance](https://img.shields.io/badge/💻_Open_to_Freelance_Work-0D5858?style=for-the-badge)
-![Apps](https://img.shields.io/badge/⚡_Full--Stack_Web_and_Mobile_Apps-E07628?style=for-the-badge)
-![RT](https://img.shields.io/badge/🔄_Real--Time_Systems-1A7070?style=for-the-badge)
-![Nyala](https://img.shields.io/badge/🏗️_NyalaJS_Framework-E07628?style=for-the-badge)
-![OSS](https://img.shields.io/badge/📦_Open_Source_npm_Libraries-0D5858?style=for-the-badge)
+[![Freelance](https://img.shields.io/badge/💻_Open_to_Freelance_Work-0D5858?style=for-the-badge)](#hire-me)
+[![Apps](https://img.shields.io/badge/⚡_Full--Stack_Web_and_Mobile_Apps-E07628?style=for-the-badge)](#projects)
+[![RT](https://img.shields.io/badge/🔄_Real--Time_Systems-1A7070?style=for-the-badge)](#projects)
+[![Nyala](https://img.shields.io/badge/🏗️_NyalaJS_Framework-E07628?style=for-the-badge)](https://github.com/nyalajs/nyalajs)
+[![OSS](https://img.shields.io/badge/📦_Open_Source_npm_Libraries-0D5858?style=for-the-badge)](#open-source)
 
 <br/><br/>
 
