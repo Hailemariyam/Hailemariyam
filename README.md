@@ -38,7 +38,7 @@ const hailemariyam = {
   shipped    : ["RAHA Ride — real-time ride-hailing platform",
                 "Niku Mobility — real-time smart parking app",
                 "MAHDER — offline-first digital archive platform",
-                "NyalaJS — enterprise TypeScript framework (creator)"],
+                "NyalaJS — enterprise TypeScript framework, 15+ packages (creator)"],
   quote      : "I build systems that scale, not just applications that run.",
 };
 ```
@@ -169,7 +169,45 @@ Requirements → architecture → development → testing → production deploym
 
 ## 📦 Open Source
 
-**Creator of [NyalaJS](https://github.com/Hailemariyam)** — an enterprise TypeScript framework with MVC & modular architecture, JWT authentication, multi-tenancy, and a full CLI
+</div>
+
+<table>
+<tr>
+<td>
+
+<div align="center">
+
+### 🏗️ [NyalaJS](https://github.com/nyalajs/nyalajs) — Creator
+
+[![GitHub](https://img.shields.io/badge/GitHub-nyalajs%2Fnyalajs-0D5858?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nyalajs/nyalajs)
+[![npm](https://img.shields.io/badge/npm-%40nyalajs-E07628?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/org/nyalajs)
+[![Website](https://img.shields.io/badge/Docs-Read%20Now-1A7070?style=for-the-badge)](https://website-rho-one-v8dhd1coy0.vercel.app/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-E07628?style=for-the-badge)](https://github.com/nyalajs/nyalajs)
+
+**Production-ready TypeScript framework — a monorepo of 15+ focused packages, not just scaffolding**
+
+</div>
+
+```bash
+npm install -g @nyalajs/cli
+nyala new my-app --template=saas
+```
+
+✦ Full MVC architecture — controllers, services, repositories, DI
+✦ Built-in JWT auth with refresh tokens (`@nyalajs/security`)
+✦ Multi-tenancy with automatic data isolation (`@nyalajs/tenancy`)
+✦ Three ready-made starter templates — **Basic**, **SaaS**, and **CMS**
+✦ `@nyalajs/ai` — framework-aware AI assistant (`nyala ask / explain / review / doctor / resolve`)
+✦ Database ORM & migrations, validation, caching, queues, mail, storage, and observability packages
+✦ Companion VS Code extensions — Nyala.js Icons (file-icon theme) and Nyala.js Theme (color theme)
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+### npm Packages
 
 </div>
 
