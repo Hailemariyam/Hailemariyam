@@ -8,7 +8,7 @@
 
 <br/>
 
-![Status](https://img.shields.io/badge/🟢_Available_for_Freelance_Work-1A7070?style=for-the-badge)
+[![Status](https://img.shields.io/badge/🟢_Available_for_Freelance_Work-1A7070?style=for-the-badge)](mailto:hailemariyam3298@gmail.com)
 
 <br/><br/>
 
