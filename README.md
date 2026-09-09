@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:0D5858,50:1A7070,100:E07628&amp;height=220&amp;section=header&amp;text=Hailemariyam%20Kebede&amp;fontSize=46&amp;fontColor=ffffff&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=Technology%20Consultant%20and%20Developer%20%7C%20Co-Founder(CTO)%20%40%20Degan%20Technologies&amp;descSize=16&amp;descAlignY=58&amp;descColor=F2D5B8" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D5858,50:1A7070,100:E07628&height=220&section=header&text=Hailemariyam%20Kebede&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Software%20Engineer%20%7C%20Mobile%20%26%20Web%20App%20Developer%20%40%20Trust%20Technologies&descSize=16&descAlignY=58&descColor=F2D5B8" />
 
 <br/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&amp;weight=600&amp;size=18&amp;pause=1200&amp;color=E07628&amp;center=true&amp;vCenter=true&amp;width=800&amp;height=50&amp;lines=🏗️+Full-Stack+Engineer+%7C+System+Architect;⚡+Real-Time+and+Event-Driven+Systems+Builder;🚀+Scalable+SaaS+and+Distributed+Systems;🌍+Driving+Digital+Transformation" />
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=18&pause=1200&color=E07628&center=true&vCenter=true&width=800&height=50&lines=🏗️+Full-Stack+%26+Mobile+Engineer+%7C+3%2B+Years+Shipping+Production+Software;⚡+Real-Time+Systems+%7C+RAHA+Ride+%26+Niku+Mobility;🚀+Creator+of+NyalaJS+%7C+Open+Source+on+npm;🌍+Full-Stack%2C+Mobile%2C+Backend+%26+DevOps" />
 
 <br/>
 
@@ -13,6 +13,8 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0D5858?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/hailemariyam-kebede-1b6066296)
 [![X](https://img.shields.io/badge/X_(Twitter)-E07628?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Hailemariy356)
 [![Views](https://komarev.com/ghpvc/?username=Hailemariyam&color=E07628&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/Hailemariyam)
+
+📍 Addis Ababa, Ethiopia
 
 </div>
 
@@ -26,15 +28,51 @@
 
 ```typescript
 const hailemariyam = {
-  role     : "Full-Stack Engineer · System Architect · DevOps Engineer",
-  company  : "Co-Founder & CTO @ Degan Technologies 🇪🇹",
-  stack    : ["TypeScript", "NestJS", "React", "PostgreSQL",
-              "Redis", "Docker", "Kubernetes", "AWS"],
-  building : ["Scalable SaaS", "Real-Time Systems", "AI-Integrated Apps",
-              "Open Source Tools"],
-  quote    : "I build systems that scale, not just applications that run.",
+  role       : "Full-Stack Software Engineer · Mobile Application Developer",
+  location   : "Addis Ababa, Ethiopia 🇪🇹",
+  experience : "3+ years",
+  current    : "Full-Stack Software Engineer @ Trust Technologies",
+  previously : "Full-Stack Engineer @ Degan Technologies (2024–2026)",
+  stack      : ["TypeScript", "JavaScript", "Node.js", "Express.js", "Laravel",
+                "React", "Next.js", "Vue.js", "Flutter", "Python"],
+  shipped    : ["RAHA Ride — real-time ride-hailing platform",
+                "Niku Mobility — real-time smart parking app",
+                "MAHDER — offline-first digital archive platform",
+                "NyalaJS — enterprise TypeScript framework (creator)"],
+  quote      : "I build systems that scale, not just applications that run.",
 };
 ```
+
+---
+
+<div align="center">
+
+## 💼 Experience
+
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Trust Technologies** — Addis Ababa, Ethiopia
+*Mobile Application Developer → Full-Stack Software Engineer*
+`Feb 2026 – Present`
+
+Progressed from building cross-platform mobile apps with Flutter into full-stack development across frontend, backend, API, and database layers. Building **RAHA Ride** (real-time ride-hailing) and **Niku Mobility** (real-time smart parking), including REST APIs, auth, and real-time application functionality.
+
+</td>
+<td width="50%" valign="top">
+
+**Degan Technologies** — Addis Ababa, Ethiopia
+*Full-Stack Engineer*
+`Jan 2024 – Feb 2026`
+
+Built and maintained production web and mobile platforms across e-learning, digital library, knowledge management, and school management domains — role-based dashboards, REST APIs, and database-driven workflows with Laravel, Vue.js, Next.js, and TypeScript.
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -43,16 +81,23 @@ const hailemariyam = {
 ## 🛠️ Tech Arsenal
 
 ### ⚡ Frontend
-<img src="https://skillicons.dev/icons?i=react,nextjs,vue,typescript,javascript,tailwind,html,css&amp;theme=dark" />
+<img src="https://skillicons.dev/icons?i=react,nextjs,vue,typescript,javascript,html,css&theme=dark" />
 
 ### 🔥 Backend
-<img src="https://skillicons.dev/icons?i=nodejs,nestjs,express,laravel,php,python&amp;theme=dark" />
+<img src="https://skillicons.dev/icons?i=nodejs,express,laravel,python&theme=dark" />
+<br/>
+<img src="https://img.shields.io/badge/Socket.IO-0D5858?style=flat-square&logo=socket.io&logoColor=white" />
 
 ### 📱 Mobile & Data
-<img src="https://skillicons.dev/icons?i=flutter,dart,firebase,postgres,mysql,mongodb,redis&amp;theme=dark" />
+<img src="https://skillicons.dev/icons?i=flutter,dart,firebase,postgres,mysql,sqlite,mongodb,redis&theme=dark" />
+<br/>
+<img src="https://img.shields.io/badge/SQL_Server-E07628?style=flat-square&logo=microsoftsqlserver&logoColor=white" />
 
 ### ☁️ DevOps & Cloud
-<img src="https://skillicons.dev/icons?i=docker,kubernetes,linux,git,githubactions,aws&amp;theme=dark" />
+<img src="https://skillicons.dev/icons?i=docker,git,linux&theme=dark" />
+<br/>
+<img src="https://img.shields.io/badge/CI%2FCD-1A7070?style=flat-square&logo=githubactions&logoColor=white" />
+<img src="https://img.shields.io/badge/DigitalOcean-0D5858?style=flat-square&logo=digitalocean&logoColor=white" />
 
 </div>
 
@@ -60,19 +105,17 @@ const hailemariyam = {
 
 <div align="center">
 
-## 🚀 Flagship Project — RAHA Ride Healing System
+## 🚀 Flagship Project — RAHA Ride
 
-*Real-time · Event-Driven · Distributed · Production-Grade*
+*Real-time ride-hailing platform · passenger & driver workflows · production deployment*
 
-![NestJS](https://img.shields.io/badge/NestJS-E07628?style=flat-square&logo=nestjs&logoColor=white)
-![React](https://img.shields.io/badge/React-1A7070?style=flat-square&logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-0D5858?style=flat-square&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-E07628?style=flat-square&logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/React-1A7070?style=flat-square&logo=react&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-E07628?style=flat-square&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-1A7070?style=flat-square&logo=redis&logoColor=white)
+![Socket.IO](https://img.shields.io/badge/Socket.IO-1A7070?style=flat-square&logo=socket.io&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-0D5858?style=flat-square&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-E07628?style=flat-square&logo=kubernetes&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS_S3-1A7070?style=flat-square&logo=amazonaws&logoColor=white)
-![WebSocket](https://img.shields.io/badge/WebSockets-0D5858?style=flat-square&logo=socket.io&logoColor=white)
+![DigitalOcean](https://img.shields.io/badge/DigitalOcean-E07628?style=flat-square&logo=digitalocean&logoColor=white)
 
 </div>
 
@@ -84,21 +127,21 @@ const hailemariyam = {
 
 **⚡ Real-Time Engine**
 
-WebSocket dispatch · Live map tracking · SOS emergency response · Low-latency Pub/Sub
+REST APIs · authentication & authorization · real-time communication for live trip and ride management
 
 </td>
 <td width="33%" align="center">
 
-**🧠 AI Integration**
+**🗄️ Database-Driven**
 
-RAG-powered support chat · Hotspot analytics · Dynamic pricing engine
+Reliable, database-driven workflows powering passenger and driver experiences end to end
 
 </td>
 <td width="33%" align="center">
 
-**☁️ Cloud-Native**
+**🏭 Full Lifecycle**
 
-Kubernetes orchestration · Docker microservices · AWS S3 · CI/CD Pipelines
+Requirements → architecture → development → testing → production deployment & maintenance
 
 </td>
 </tr>
@@ -108,7 +151,25 @@ Kubernetes orchestration · Docker microservices · AWS S3 · CI/CD Pipelines
 
 <div align="center">
 
-## 📦 Open Source Packages
+## 🧩 More Selected Projects
+
+</div>
+
+| Project | What it does |
+|---|---|
+| **Niku Mobility** | Real-time smart parking app — mobile, backend, and API integration for live parking workflows |
+| **MAHDER (ማህደር)** | Smart digital records & archive platform with role-based access and **offline-first sync** |
+| **SaaS Starter Kit** | Modular multi-tenant SaaS architecture — shared-database and dedicated-database tenant isolation strategies |
+| **Yene** | Property & vehicle marketplace — listings, agent workflows, B2B, and auctions |
+| **E-Learning Platform** | Paid courses, live classes, and teacher/student dashboards with payment integration |
+
+---
+
+<div align="center">
+
+## 📦 Open Source
+
+**Creator of [NyalaJS](https://github.com/Hailemariyam)** — an enterprise TypeScript framework with MVC & modular architecture, JWT authentication, multi-tenancy, and a full CLI
 
 </div>
 
@@ -131,14 +192,12 @@ Kubernetes orchestration · Docker microservices · AWS S3 · CI/CD Pipelines
 npm install m-seo
 ```
 
-✦ Universal SEO tags (OG · Twitter · JSON-LD)  
-✦ CLI with 10+ audit & generation commands  
-✦ AI-powered content & keyword analysis  
-✦ CMS plugins (WordPress · Ghost · Strapi)  
-✦ SDKs for PHP · Python · Ruby · Go  
-✦ Image/Video SEO + WebP conversion  
-
-**Works with:** React · Next.js · Vue · Express · PHP · Python · Go
+✦ Universal SEO tags (OG · Twitter · JSON-LD)
+✦ Bot detection & AI content analysis
+✦ Image/Video SEO
+✦ Social preview & analytics integration
+✦ SDKs & adapters for multiple frameworks
+✦ Open-source docs + live demo apps
 
 </td>
 <td width="50%">
@@ -158,14 +217,12 @@ npm install m-seo
 npm install wenfit-validator
 ```
 
-✦ Automatic TypeScript type inference  
-✦ Define once, validate everywhere (full-stack)  
-✦ Zero external dependencies  
-✦ Async validation (DB checks · API calls)  
-✦ Composable & extensible schemas  
-✦ Plugin system + i18n ready  
-
-**Works with:** React · Vue · Angular · NestJS · Express
+✦ Automatic TypeScript type inference
+✦ Define once, validate everywhere (full-stack)
+✦ Zero external dependencies
+✦ Async validation (DB checks · API calls)
+✦ Composable & extensible schemas
+✦ Plugin system + i18n ready
 
 </td>
 </tr>
@@ -177,16 +234,16 @@ npm install wenfit-validator
 
 ## 📊 GitHub Analytics
 
-<img height="175em" src="https://github-readme-stats.vercel.app/api?username=Hailemariyam&amp;show_icons=true&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=E07628&amp;icon_color=1A7070&amp;text_color=F2D5B8&amp;include_all_commits=true&amp;count_private=true" />
-<img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hailemariyam&amp;layout=compact&amp;theme=dark&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=E07628&amp;text_color=F2D5B8" />
+<img height="175em" src="https://github-readme-stats.vercel.app/api?username=Hailemariyam&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=E07628&icon_color=1A7070&text_color=F2D5B8&include_all_commits=true&count_private=true" />
+<img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hailemariyam&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=E07628&text_color=F2D5B8" />
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Hailemariyam&amp;theme=dark&amp;hide_border=true&amp;background=0d1117&amp;ring=E07628&amp;fire=E07628&amp;currStreakLabel=1A7070&amp;sideLabels=1A7070&amp;currStreakNum=ffffff&amp;sideNums=ffffff&amp;dates=888888" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Hailemariyam&theme=dark&hide_border=true&background=0d1117&ring=E07628&fire=E07628&currStreakLabel=1A7070&sideLabels=1A7070&currStreakNum=ffffff&sideNums=ffffff&dates=888888" />
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Hailemariyam&amp;theme=tokyo-night&amp;hide_border=true&amp;bg_color=0d1117&amp;color=E07628&amp;line=1A7070&amp;point=E07628&amp;area=true" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Hailemariyam&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=E07628&line=1A7070&point=E07628&area=true" />
 
 </div>
 
@@ -196,15 +253,19 @@ npm install wenfit-validator
 
 ## 🎯 Currently Building
 
-![SaaS](https://img.shields.io/badge/⚡_Scalable_SaaS_Architecture-0D5858?style=for-the-badge)
-![RT](https://img.shields.io/badge/🔄_Real--Time_Distributed_Systems-E07628?style=for-the-badge)
-![AI](https://img.shields.io/badge/🤖_AI_Agents_%26_RAG_Systems-1A7070?style=for-the-badge)
-![OSS](https://img.shields.io/badge/📦_Open_Source_Ecosystem-E07628?style=for-the-badge)
-![K8s](https://img.shields.io/badge/☁️_Cloud--Native_%26_Kubernetes-0D5858?style=for-the-badge)
+![Apps](https://img.shields.io/badge/⚡_Full--Stack_Web_%26_Mobile_Apps-0D5858?style=for-the-badge)
+![RT](https://img.shields.io/badge/🔄_Real--Time_Systems-E07628?style=for-the-badge)
+![Nyala](https://img.shields.io/badge/🏗️_NyalaJS_Framework-1A7070?style=for-the-badge)
+![OSS](https://img.shields.io/badge/📦_Open_Source_npm_Libraries-E07628?style=for-the-badge)
+![DevOps](https://img.shields.io/badge/☁️_Cloud_Deployment_%26_DevOps-0D5858?style=for-the-badge)
+
+<br/><br/>
+
+🎓 **BSc in Software Engineering** — Wollo University, Ethiopia · 2019–2024
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:E07628,50:1A7070,100:0D5858&amp;height=130&amp;section=footer&amp;animation=fadeIn" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:E07628,50:1A7070,100:0D5858&height=130&section=footer&animation=fadeIn" />
 
 *💡 "I build systems that scale, not just applications that run."*
 
